@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/cv.css" />
+    <!-- React, React‑DOM & Babel (for in‑browser JSX transform) -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+      /* Size & center the 3D icon cloud */
+      .icon-cloud {
+        width: 320px;
+        height: 320px;
+        margin: 0 auto;
+      }
+      canvas.rounded-lg {
+        border-radius: 8px;
+      }
+    </style>
+</head>
+<body>
+  <!-- ---------- Global Navbar (same as Projects.html) ---------- -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html#about"      data-translate="home">Home</a></li>
+        <li><a href="projects.html" data-translate="projects">Projects</a></li>
+        <li><a href="insights.html" data-translate="insights">Insights</a></li>
+        <li><a href="cv.html" data-translate="contact">CV</a></li>
+        <li>
+          <button id="lang-en">EN</button>
+          <button id="lang-zh">中文</button>
+        </li>
+      </ul>
+      <!-- mobile hamburger button -->
+      <button id="hamburger-btn" class="hamburger">
+        <img src="assets/images/List.png" alt="menu icon">
+      </button>
+    </nav>
+
+    <!-- mobile drawer -->
+    <div id="mobile-drawer" class="mobile-drawer">
+      <button id="drawer-close" class="drawer-close">×</button>
+      <ul class="drawer-links">
+        <li><a href="index.html#about"    data-translate="home">Home</a></li>
+        <li><a href="projects.html" data-translate="projects">Projects</a></li>
+        <li><a href="insights.html" data-translate="insights">Insights</a></li>
+        <li><a href="cv.html" data-translate="contact">CV</a></li>
+      </ul>
+      <div class="drawer-lang">
+        <button id="drawer-lang-en">EN</button>
+        <button id="drawer-lang-zh">中文</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ---------- Page Title ---------- -->
+  <h1 class="page-title" data-translate="curriculumVitae">Curriculum Vitae</h1>
+
+  <!-- ---------- CV content will be added below ---------- -->
+  <main>
+    <!-- TODO: add structured CV sections here -->
+       <!-- 1. 姓名 & 联系方式 -->
+<section class="cv-section" id="profile">
+  <div class="intro-block">
+    <h2 class="profile-name" data-translate="profileName">Xin Shu</h2>
+    <!-- 左侧文字 -->
+    <div class="intro-text">
+      <ul>
+        <li class="cv-entry">
+          <span class="title" data-translate="profileRole">PhD Student, Human Computer Interaction</span>
+          <span class="meta" data-translate="profileAffiliation">School of Computing, Newcastle University</span>
+        </li>
+        <li class="cv-entry">
+          <span class="title" data-translate="emailLabel">Email</span>
+          <span class="meta">x.shu6@newcastle.ac.uk</span>
+        </li>
+        <li class="cv-entry">
+          <span class="title" data-translate="phoneLabel">Phone</span>
+          <span class="meta">+44 7536 205 983</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 右侧 11 张图标 -->
+    <div class="intro-icons">
+      <div id="icon-cloud" class="icon-cloud"></div>
+    </div>
+  </div>
+</section>
+  
+      <!-- 2. 教育背景 -->
+      <section class="cv-section" id="education">
+        <h2 data-translate="education">Education</h2>
+        <ul>
+          <li class="cv-entry">
+            <span class="title" data-translate="phd">Ph.D in Human Computer Interaction</span>
+            <span class="meta">Newcastle University, UK</span>
+            <span class="year">2023.10 – Present</span>
+          </li>
+          <li class="cv-entry">
+            <span class="title" data-translate="visitingPhd">Visiting Ph.D (Human Computer Interaction)</span>
+            <span class="meta">Newyork University(NYUAD), UAE</span>
+            <span class="year">2025.01 – 2025.06</span>
+          </li>
+          <li class="cv-entry">
+            <span class="title" data-translate="mscDesign">MSc Design Informatics</span>
+            <span class="meta">University of Edinburgh, UK</span>
+            <span class="year">2022.09 – 2023.09</span>
+          </li>
+          <li class="cv-entry">
+            <span class="title" data-translate="bengInfoSystems">BEng Information Systems</span>
+            <span class="meta">Dalarna University, Sweden</span>
+            <span class="year">2020.09 – 2021.06</span>
+          </li>
+          <li class="cv-entry">
+            <span class="title" data-translate="exchangeStudent">Exchange Student (Computer Science)</span>
+            <span class="meta">University of Oulu, Finland</span>
+            <span class="year">2019.09 – 2020.06</span>
+          </li>
+          <li class="cv-entry">
+            <span class="title" data-translate="bengSoftware">BEng Software Engineering</span>
+            <span class="meta">Jiangxi University of Finance and Economics(JUFE), China</span>
+            <span class="year">2017.09 – 2021.06</span>
+          </li>
+        </ul>
+      </section>
+  
+  
+      <!-- 3. 代表性项目 / 论文 -->
+<section class="cv-section" id="projects">
+  <h2 data-translate="selectedProjects">Selected Projects &amp; Publications</h2>
+  <ul>
+    <!-- 2025 -->
+    <li class="cv-entry">
+      <span class="title">
+        <a href="https://link.springer.com/chapter/10.1007/978-3-031-93539-8_26" 
+           target="_blank" data-translate="globalUP">
+          GlobalUP: Leveraging Social Media to Provide Social Support for Chinese Cultural Groups in Unfamiliar Environments
+        </a>
+      </span>
+      <span class="meta" data-translate="globalUPPublication">
+        Social Computing and Social Media (HCII 2025)
+      </span>
+    </li>
+
+    <li class="cv-entry">
+      <span class="title">
+        <a href="https://dl.acm.org/doi/10.1145/3708359.3712080" 
+           target="_blank" data-translate="fretMate">
+          FretMate: ChatGPT-Powered Adaptive Guitar Learning Assistant
+        </a>
+      </span>
+      <span class="meta" data-translate="fretMatePublication">ACM IUI 2025</span>
+      <span class="year">2025</span>
+    </li>
+
+    <li class="cv-entry">
+      <span class="title">
+        <a href="https://dl.acm.org/doi/10.1145/3706598.3713259" 
+           target="_blank" data-translate="humanLLM">
+          Human–LLM Interaction for Creative Inspiration
+        </a>
+      </span>
+      <span class="meta" data-translate="humanLLMPublication">ACM CHI 2025</span>
+      <span class="year">2025</span>
+    </li>
+
+    <!-- 2023 -->
+    <li class="cv-entry">
+      <span class="title">
+        <a href="https://dl.acm.org/doi/10.1145/3544548.3581564" 
+           target="_blank" data-translate="workWithAI">
+          Work with AI and Work for AI: Autonomous Vehicle Safety Drivers’ Lived Experiences
+        </a>
+      </span>
+      <span class="meta" data-translate="workWithAIPublication">ACM CHI 2023</span>
+    </li>
+
+    <li class="cv-entry">
+      <span class="title">
+        <a href="https://chn.oversea.cnki.net/kcms/detail/detail.aspx?filename=BZGC202216002&dbcode=CJFQ&dbname=CJFDLAST2022&uniplatform=NZKPT" 
+           target="_blank" data-translate="contactlessPhysio">
+          Contactless Physiological Sensing in Smart Home Environments
+        </a>
+      </span>
+      <span class="meta" data-translate="contactlessPhysioPublication">
+        Industrial Engineering &amp; Management (2022)
+      </span>
+    </li>
+
+    <!-- 2020 -->
+    <li class="cv-entry">
+      <span class="title">
+        <a href="https://github.com/Mr-Sushi/SNA_group8" 
+           target="_blank" data-translate="interactivePattern">
+          Interactive Pattern Explanation for Network Visualisation
+        </a>
+      </span>
+      <span class="meta" data-translate="interactivePatternPublication">
+        Research Project
+      </span>
+      <span class="year">02/2020 - 05/2020</span>
+    </li>
+
+    <li class="cv-entry">
+      <span class="title">
+        <a href="https://github.com/Mr-Sushi/instagram-clone" 
+           target="_blank" data-translate="serverRenderedInstagram">
+          Server-Rendered Instagram Clone
+        </a>
+      </span>
+      <span class="year"> 02/2020 - 05/2020</span>
+    </li>
+
+    <li class="cv-entry">
+      <span class="title" data-translate="mobileReadingApp">
+        Mobile Reading-App Prototype &amp; MTurk Evaluation
+      </span>
+      <span class="meta">Adobe XD • 105 surveys + 20 interviews</span>
+      <span class="year"> 12/2019 - 02/2020</span>
+    </li>
+
+    <!-- 2019 -->
+    <li class="cv-entry">
+      <span class="title">
+        <a href="https://github.com/Mr-Sushi/PWP" 
+           target="_blank" data-translate="programmableWeb">
+          Programmable-web-project: Events API (Flask-RESTful)
+        </a>
+      </span>
+      <span class="year">09/2019 – 12/2019</span>
+    </li>
+    <li class="cv-entry">
+      <span class="title">
+        <a href="https://github.com/Mr-Sushi/Super-Snake" 
+           target="_blank" data-translate="gluttonousSnake">
+          Gluttonous Snake Enhanced Version
+        </a>
+      </span>
+      <span class="year">01/2019 – 02/2019</span>
+    </li>
+  </ul>
+</section>
+  
+  
+      <!-- 4. 实习经历 -->
+     <section class="cv-section" id="internship">
+  <h2 data-translate="internshipExperience">Internship Experience</h2>
+  <ul>
+    <li class="cv-entry">
+      <span class="title" data-translate="shopeePM">Product Manager Intern</span>
+      <span class="meta" data-translate="shopeeCompany">Shopee</span>
+      <span class="year">2022.01 – 2022.05</span>
+      <ul class="detail">
+        <li data-translate="shopeePMExp1"></li>
+        <li data-translate="shopeePMExp2"></li>
+        <li data-translate="shopeePMExp3"></li>
+      </ul>
+    </li>
+
+    <li class="cv-entry">
+      <span class="title" data-translate="kuaishouPM">Product Manager Intern</span>
+      <span class="meta" data-translate="kuaishouCompany">Kuaishou(Kuaiying), Shenzhen</span>
+      <span class="year">2021 – 2022</span>
+      <ul class="detail">
+        <li data-translate="kuaishouPMExp1"></li>
+        <li data-translate="kuaishouPMExp2"></li>
+        <li data-translate="kuaishouPMExp3"></li>
+        <li data-translate="kuaishouPMExp4"></li>
+      </ul>
+    </li>
+
+    <li class="cv-entry">
+      <span class="title" data-translate="didiAI">AI Product Manager Intern</span>
+      <span class="meta" data-translate="didiCompany">DiDi Global, Beijing</span>
+      <span class="year">2021 – 2022</span>
+      <ul class="detail">
+        <li data-translate="didiAIExp1"></li>
+        <li data-translate="didiAIExp2"></li>
+        <li data-translate="didiAIExp3"></li>
+        <li data-translate="didiAIExp4"></li>
+      </ul>
+    </li>
+
+    <li class="cv-entry">
+      <span class="title" data-translate="youdaoPM">Product Manager Intern </span>
+      <span class="meta" data-translate="youdaoCompany">NetEase Youdao(Super Dictionary), Beijing</span>
+      <span class="year">2020 – 2021</span>
+      <ul class="detail">
+        <li data-translate="youdaoPMExp1"></li>
+        <li data-translate="youdaoPMExp2"></li>
+        <li data-translate="youdaoPMExp3"></li>
+      </ul>
+    </li>
+  </ul>
+</section>
+      <!-- 5. 技能 -->
+      <section class="cv-section" id="skills">
+        <h2 data-translate="technicalSkills">Technical Skills</h2>
+        <ul>
+          <li class="cv-entry">
+            <span class="title" data-translate="skillsProgramming">Programming</span>
+            <span class="meta" data-translate="skillsProgrammingDetail">Python, Java, JavaScript, C++, Unity, SQL</span>
+          </li>
+          <li class="cv-entry">
+            <span class="title" data-translate="skillsTools">Tools</span>
+            <span class="meta" data-translate="skillsToolsDetail">VS Code, Git, Jupyter Notebook, Confluence, Jira, Xmind</span>
+          </li>
+          <li class="cv-entry">
+            <span class="title" data-translate="skillsPrototyping">Prototyping</span>
+            <span class="meta" data-translate="skillsPrototypingDetail">Figma, Axure</span>
+          </li>
+          <li class="cv-entry">
+            <span class="title" data-translate="skillsDesign">Design</span>
+            <span class="meta" data-translate="skillsDesignDetail">Photoshop, Lightroom</span>
+          </li>
+          <li class="cv-entry">
+            <span class="title" data-translate="skillsLanguages">Languages</span>
+            <span class="meta" data-translate="skillsLanguagesDetail">Chinese (Native); English (TOEFL 109)</span>
+          </li>
+        </ul>
+      </section>
+  
+      <!-- 6. 校园经历 -->
+      <section class="cv-section" id="campus">
+        <h2 data-translate="campusLeadership">Campus Leadership &amp; Activities</h2>
+        <ul>
+          <li class="cv-entry">
+            <span class="title" data-translate="headPublicity">Head&nbsp;of&nbsp;Publicity Dept.</span>
+            <span class="meta" data-translate="headPublicityAffiliation">Newcastle University Students’ Union</span>
+            <span class="year">2023&nbsp;– Present</span>
+          </li>
+          <li class="cv-entry">
+            <span class="title" data-translate="mediaLead">Media Lead – North‑East Five‑University Chinese New Year Gala (1 000 attendees)</span>
+            <span class="meta" data-translate="mediaLeadAffiliation">Newcastle, Durham &amp; 3 partner universities</span>
+            <span class="year">2024</span>
+          </li>
+          <li class="cv-entry">
+            <span class="title" data-translate="volunteer">Volunteer</span>
+            <span class="meta" data-translate="volunteerAffiliation">HumanTech Conference, Helsinki</span>
+          </li>
+          <!-- 2019–2020: Oulu Chinese New Year Gala Host -->
+          <li class="cv-entry">
+            <span class="title" data-translate="hostCNY">Host, Chinese New Year Gala</span>
+            <span class="meta" data-translate="hostCNYAffiliation">University of Oulu, Finland</span>
+            <span class="year">2019&nbsp;–&nbsp;2020</span>
+          </li>
+
+          <!-- 2018–2019: JUFE Campus Roles -->
+          <li class="cv-entry">
+            <span class="title" data-translate="jufePhotoLiaison">Head of External Liaison, Photography Association</span>
+            <span class="meta" data-translate="jufeAffiliation">Jiangxi University of Finance and Economics (JUFE)</span>
+            <span class="year">2018&nbsp;–&nbsp;2019</span>
+          </li>
+          <li class="cv-entry">
+            <span class="title" data-translate="classMonitor">Class Monitor, Software Engineering</span>
+            <span class="meta" data-translate="jufeAffiliation">Jiangxi University of Finance and Economics (JUFE)</span>
+            <span class="year">2018&nbsp;–&nbsp;2019</span>
+          </li>
+          <li class="cv-entry">
+            <span class="title" data-translate="flagGuardPublicity">Head of Publicity, Flag Guard Team</span>
+            <span class="meta" data-translate="jufeAffiliation">Jiangxi University of Finance and Economics (JUFE)</span>
+            <span class="year">2018&nbsp;–&nbsp;2019</span>
+          </li>
+          <li class="cv-entry">
+            <span class="title" data-translate="martialArtsDeputy">Deputy Head of Publicity, Martial Arts Association</span>
+            <span class="meta" data-translate="jufeAffiliation">Jiangxi University of Finance and Economics (JUFE)</span>
+            <span class="year">2018&nbsp;–&nbsp;2019</span>
+          </li>
+        </ul>
+      </section>
+  
+      <!-- 7. 奖项 -->
+      <section class="cv-section" id="awards">
+        <h2 data-translate="honoursAwards">Honours &amp; Awards</h2>
+        <ul>
+          <!-- 07/2025: IEEE WHC Student Innovation Challenge 入选 -->
+          <li class="cv-entry">
+            <span class="title" data-translate="whcChallenge">
+              Selected for Student Innovation Challenge, IEEE World Haptics Conference 2025
+            </span>
+            <span class="year">07/2025</span>
+          </li>
+          <!-- 06/2021 -->
+          <li class="cv-entry">
+            <span class="title" data-translate="outstandingGraduate">Outstanding Graduate Award</span>
+            <span class="year">06/2021</span>
+          </li>
+          <!-- 05/2020 -->
+          <li class="cv-entry">
+            <span class="title" data-translate="overseasScholarship">First Prize Scholarship for Overseas Students</span>
+            <span class="year">05/2020</span>
+          </li>
+          <!-- 04/2020 -->
+          <li class="cv-entry">
+            <span class="title" data-translate="dalarnaScholarship">Highest Scholarship from Dalarna University</span>
+            <span class="year">04/2020</span>
+          </li>
+          <!-- 12/2019 -->
+          <li class="cv-entry">
+            <span class="title" data-translate="modellingContest">Third Prize in Jiangxi Province University Student Mathematical Modelling Competition</span>
+            <span class="year">12/2019</span>
+          </li>
+          <!-- 09/2019 -->
+          <li class="cv-entry">
+            <span class="title" data-translate="internetPlusThird">Third Prize in Internet + University Student Innovation and Entrepreneurship Competition</span>
+            <span class="year">09/2019</span>
+          </li>
+          <li class="cv-entry">
+            <span class="title" data-translate="campusInternetThird">Campus “Internet +” Innovation Contest – 3rd Prize</span>
+            <span class="year">09/2019</span>
+          </li>
+
+          <!-- 06/2019 -->
+          <li class="cv-entry">
+            <span class="title" data-translate="yongyouScholarship">Yongyou Software Scholarship</span>
+            <span class="year">06/2019</span>
+          </li>
+          <li class="cv-entry">
+            <span class="title" data-translate="learningExcellence">Learning Excellence Scholarship</span>
+            <span class="year">06/2019</span>
+          </li>
+          <!-- 05/2019 -->
+          <li class="cv-entry">
+            <span class="title" data-translate="sciTechStar">Science and Technology Star Corporate Scholarship</span>
+            <span class="year">05/2019</span>
+          </li>
+          <li class="cv-entry">
+            <span class="title" data-translate="mathModellingSecond">National University Mathematical‑Modelling Contest – 2nd Prize</span>
+            <span class="year">05/2019</span>
+          </li>
+          <li class="cv-entry">
+            <span class="title" data-translate="programmingContest">Jiangxi Provincial Programming Contest – 1st Prize</span>
+            <span class="year">05/2019</span>
+          </li>
+          <!-- 12/2018 -->
+          <li class="cv-entry">
+            <span class="title" data-translate="meritStudent">University Level Merit Student</span>
+            <span class="year">12/2018</span>
+          </li>
+          <li class="cv-entry">
+            <span class="title" data-translate="bestDebater">Best Debater – SiBian Cup</span>
+            <span class="year">12/2018</span>
+          </li>
+          <!-- 09/2018 -->
+          <li class="cv-entry">
+            <span class="title" data-translate="psychCounsellor">Level‑3 Psychological Counsellor, Jiangxi Province</span>
+            <span class="year">09/2018</span>
+          </li>
+          <!-- 06/2018 -->
+          <li class="cv-entry">
+            <span class="title" data-translate="juefeFirstClass">First‑class Scholarship – JUFE Foreign Languages</span>
+            <span class="year">06/2018</span>
+          </li>
+          <li class="cv-entry">
+            <span class="title" data-translate="learningExcellence">Learning Excellence Scholarship</span>
+            <span class="year">06/2018</span>
+          </li>
+          <!-- 05/2018 -->
+          <li class="cv-entry">
+            <span class="title" data-translate="computerContestSecond">Second Prize in 2018 Jiangxi Province University Student Computer Competition</span>
+            <span class="year">05/2018</span>
+          </li>
+          <li class="cv-entry">
+            <span class="title" data-translate="erpSandboxSecond">Second Prize in University‑level “ERP Sand Table Simulation Operation” Competition</span>
+            <span class="year">05/2018</span>
+          </li>
+          <li class="cv-entry">
+            <span class="title" data-translate="jufeTalent">Talent of Jiangxi University of Finance and Economics</span>
+            <span class="year">05/2018</span>
+          </li>
+        </ul>
+      </section>
+  
+      <!-- 8. Teaching & Service -->
+      <section class="cv-section" id="teaching">
+        <h2 data-translate="teachingService">Teaching &amp; Service</h2>
+          <ul>
+          <li class="cv-entry">
+            <span class="title" data-translate="paperReviewer">Paper Reviewer</span>
+            <span class="meta" data-translate="paperReviewerAffiliation">ACM IUI, EDM</span>
+          </li>
+          </ul>
+
+      </section>
+  
+      <!-- ========= Footer ========= -->
+      <footer class="copyright">
+        <p data-translate="copyrightText">© 2025 Xin Shu. All rights reserved.</p>
+      </footer>
+
+  
+  </main>
+
+    <!-- language dictionary -->
+    <script src="assets/js/translations.js"></script>
+    <!-- shared logic -->
+    <script src="assets/js/main.js"></script>
+
+    <script type="text/babel">
+      /* === 3D Icon Cloud === */
+      const { useRef, useEffect, useState } = React;
+
+      function easeOutCubic(t) {
+        return 1 - Math.pow(1 - t, 3);
+      }
+
+      function IconCloud({ images }) {
+        const canvasRef = useRef(null);
+        const [iconPositions, setIconPositions] = useState([]);
+
+        const rotationRef = useRef({ x: 0, y: 0 });
+        const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+        const iconCanvasesRef = useRef([]);
+        const imagesLoadedRef = useRef([]);
+
+        /* prepare off‑screen icon canvases */
+        useEffect(() => {
+          imagesLoadedRef.current = images.map(() => false);
+          iconCanvasesRef.current = images.map((src, idx) => {
+            const off = document.createElement('canvas');
+            off.width = 80; off.height = 80;
+            const offCtx = off.getContext('2d');
+            const img = new Image();
+            img.src = src;
+            img.onload = () => {
+              offCtx.beginPath();
+              offCtx.arc(40, 40, 40, 0, Math.PI * 2);
+              offCtx.closePath();
+              offCtx.clip();
+              offCtx.drawImage(img, 0, 0, 80, 80);
+              imagesLoadedRef.current[idx] = true;
+            };
+            return off;
+          });
+        }, [images]);
+
+        /* generate Fibonacci‑sphere positions once */
+        useEffect(() => {
+          const num = images.length;
+          const offset = 2 / num;
+          const inc = Math.PI * (3 - Math.sqrt(5));
+          const pos = [];
+          for (let i = 0; i < num; i++) {
+            const y = i * offset - 1 + offset / 2;
+            const r = Math.sqrt(1 - y * y);
+            const phi = i * inc;
+            pos.push({
+              x: Math.cos(phi) * r * 100,
+              y: y * 100,
+              z: Math.sin(phi) * r * 100,
+              id: i
+            });
+          }
+          setIconPositions(pos);
+        }, [images]);
+
+        /* animation loop */
+        useEffect(() => {
+          const canvas = canvasRef.current;
+          const ctx = canvas.getContext('2d');
+
+          let frame;
+          const animate = () => {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            const { x: mx, y: my } = mousePos;
+            const cx = canvas.width / 2;
+            const cy = canvas.height / 2;
+            const maxD = Math.sqrt(cx*cx + cy*cy);
+            const dx = mx - cx;
+            const dy = my - cy;
+            const speed = 0.003 + (Math.sqrt(dx*dx + dy*dy) / maxD) * 0.01;
+
+            rotationRef.current.x += (dy / canvas.height) * speed;
+            rotationRef.current.y += (dx / canvas.width)  * speed;
+
+            iconPositions.forEach((icon,i) => {
+              const cosX = Math.cos(rotationRef.current.x);
+              const sinX = Math.sin(rotationRef.current.x);
+              const cosY = Math.cos(rotationRef.current.y);
+              const sinY = Math.sin(rotationRef.current.y);
+
+              const rx = icon.x * cosY - icon.z * sinY;
+              const rz = icon.x * sinY + icon.z * cosY;
+              const ry = icon.y * cosX + rz * sinX;
+
+              const scale = (rz + 200) / 300;
+              const opacity = Math.max(0.25, Math.min(1, (rz + 150) / 200));
+
+              ctx.save();
+              ctx.translate(cx + rx, cy + ry);
+              ctx.scale(scale, scale);
+              ctx.globalAlpha = opacity;
+
+              if (iconCanvasesRef.current[i] && imagesLoadedRef.current[i]) {
+                ctx.drawImage(iconCanvasesRef.current[i], -40, -40, 80, 80);
+              }
+              ctx.restore();
+            });
+            frame = requestAnimationFrame(animate);
+          };
+          animate();
+          return () => cancelAnimationFrame(frame);
+        }, [iconPositions, mousePos]);
+
+        return (
+          <canvas
+            ref={canvasRef}
+            width={320}
+            height={320}
+            className="rounded-lg"
+            onMouseMove={e => {
+              const rect = canvasRef.current.getBoundingClientRect();
+              setMousePos({ x: e.clientX - rect.left, y: e.clientY - rect.top });
+            }}
+          />
+        );
+      }
+
+      /* === mount component === */
+      const localImages = [
+        "assets/images/icon/Dalarna.png",
+        "assets/images/icon/Didi.png",
+        "assets/images/icon/edinburgh.png",
+        "assets/images/icon/JUFE.png",
+        "assets/images/icon/Kuaishou.png",
+        "assets/images/icon/newcastle.png",
+        "assets/images/icon/NYUAD.png",
+        "assets/images/icon/Oulu.png",
+        "assets/images/icon/shopee.png",
+        "assets/images/icon/tsinghua.jpg",
+        "assets/images/icon/youdao.png"
+      ];
+
+      ReactDOM.createRoot(document.getElementById('icon-cloud'))
+              .render(<IconCloud images={localImages} />);
+    </script>
+</body>
+</html>

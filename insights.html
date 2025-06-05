@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Insights</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/insights.css" />
+</head>
+<body>
+<!-- ===== Background music (Insights only) ===== -->
+<audio id="insights-bgm"
+       src="assets/Time.mp3"
+       preload="auto"
+       autoplay
+       loop></audio>
+
+<header>
+  <nav>
+    <ul>
+      <li><a href="index.html#about"      data-translate="home">Home</a></li>
+      <li><a href="projects.html" data-translate="projects">Projects</a></li>
+      <li><a href="insights.html" data-translate="insights">Insights</a></li>
+      <li><a href="cv.html" data-translate="contact">CV</a></li>
+      <li>
+        <button id="lang-en">EN</button>
+        <button id="lang-zh">中文</button>
+      </li>
+    </ul>
+    <!-- mobile hamburger button -->
+    <button id="hamburger-btn" class="hamburger">
+      <img src="assets/images/List.png" alt="menu icon" />
+    </button>
+  </nav>
+
+  <!-- mobile drawer -->
+  <div id="mobile-drawer" class="mobile-drawer">
+    <button id="drawer-close" class="drawer-close">×</button>
+    <ul class="drawer-links">
+      <li><a href="index.html#about"    data-translate="home">Home</a></li>
+      <li><a href="projects.html" data-translate="projects">Projects</a></li>
+      <li><a href="insights.html" data-translate="insights">Insights</a></li>
+      <li><a href="cv.html" data-translate="contact">CV</a></li>
+    </ul>
+    <div class="drawer-lang">
+      <button id="drawer-lang-en">EN</button>
+      <button id="drawer-lang-zh">中文</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <h1 class="page-title" data-translate="insightsGallery">Insights</h1>
+  <!-- dynamic film‑strips will be injected by Insights.js -->
+  <section id="filmstrip-gallery" class="filmstrip-gallery"></section>
+
+  <!-- image counts for each folder (read by Insights.js) -->
+  <script id="gallery-manifest" type="application/json">
+  {
+    "Abu Dhabi": 68,
+    "Edinburgh": 113,
+    "Finland": 12,
+    "London": 18,
+    "France": 55,
+    "Greece": 72,
+    "Iceland": 51,
+    "Highland": 20,
+    "Other Places in UK": 24,
+    "Italy": 77,
+    "Moments": 79,
+    "Oxford": 10,
+    "Portugal": 35,
+    "Sweden": 14,
+    "Turkey": 22,
+    "Pets": 30,
+    "Selfie": 31
+  }
+  </script>
+
+        <!-- ========= Footer ========= -->
+        <footer class="copyright">
+            <p data-translate="copyrightText">© 2025 Xin Shu. All rights reserved.</p>
+          </footer>
+
+</main>
+
+<!-- translations and scripts -->
+ <script src="assets/js/translations.js"></script>
+ <script src="assets/js/main.js"></script>
+<script src="assets/js/Insights.js"></script>
+
+</body>
+</html>

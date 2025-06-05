@@ -1,0 +1,327 @@
+/* ===== Shared Header / Navbar styles (copied from projects.css) ===== */
+:root {
+  --apple-black: #1d1d1f;
+  --accent-orange: #ff5e00;
+  --tag-purple: #6951ff;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.65);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 0 32px;
+  box-sizing: border-box;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 60px;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 36px;
+}
+header nav ul li {
+  display: flex;
+  align-items: center;
+}
+header nav ul li a {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--apple-black);
+  text-decoration: none;
+  transition: color 0.25s;
+  padding: 0;
+  line-height: 60px;
+}
+/* header nav ul li a:hover { color: var(--accent-orange); } */
+
+/* mobile drawer & hamburger */
+@media (max-width: 700px){
+  header nav ul{ display:none; gap:24px; }
+  .mobile-drawer{
+    display:none;
+    position:fixed;
+    top:0; left:-100%;
+    width:75%; height:100%;
+    background:#ebebec;
+    transition:left .3s ease;
+    padding:80px 28px;
+    box-shadow:4px 0 12px rgba(0,0,0,.2);
+    z-index:1000;
+  }
+  .mobile-drawer.open{ left:0; display:block; }
+  .drawer-links li{ margin-bottom:32px; }
+  .drawer-links a{
+    font-size:1.8rem;
+    font-weight:600;
+    color:var(--apple-black);
+    text-decoration:none;
+    line-height:1.2;
+  }
+  .hamburger{
+    background:none;
+    border:none;
+    position:absolute;
+    top:18px; right:5vw;
+    display:block;
+  }
+}
+
+/* --- Awards & Teaching list item formatting (same style as skills) ----- */
+#awards li{
+  display:flex;
+  align-items:flex-start;
+  flex-wrap:wrap;
+  gap:4px;
+  line-height:1.35;
+}
+
+/* shared page title */
+.page-title{
+  margin:40px 0 50px 60px;
+  font-size:2.6rem;
+  font-weight:700;
+  color:var(--apple-black);
+}
+
+/* language switch buttons */
+#lang-en,
+#lang-zh{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  background:#ffffff;
+  color:#000;
+  border:1.5px solid #000;
+  border-radius:4px;
+  padding:4px 14px;
+  font-size:.9rem;
+  font-weight:500;
+  line-height:1;
+  cursor:pointer;
+  transition:background .25s;
+  margin:0;
+}
+#lang-en:hover,
+#lang-zh:hover{ background:#e6e6e6; }
+
+/* =======================================================================
+   CV Page Styles  (cv.css)
+   -----------------------------------------------------------------------
+   Only CV–specific layout tweaks live here.  Global header / navbar /
+   page‑title rules are already defined in insights.css & projects.css,
+   so we just add a simple vertical layout for the résumé sections.
+   ======================================================================= */
+
+/* --- General CV Page Styling --- */
+main {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: var(--apple-black);
+}
+
+/* --- CV Sections --- */
+.cv-section {
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.cv-section:last-child {
+  border-bottom: none;
+}
+
+/* --- Section Titles --- */
+.cv-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: var(--apple-black); /* 修改标题颜色为黑色 */
+  padding-left: 0; /* 去掉左侧padding */
+  border-left: none; /* 去掉左侧竖线 */
+}
+
+/* --- CV Entries --- */
+.cv-entry {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.cv-entry .title {
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.cv-entry .meta {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.cv-entry .year {
+  color: #888;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+/* --- Nested lists (details) --- */
+.detail {
+  margin-left: 20px;
+  list-style-type: disc;
+  margin-top: 8px;
+}
+
+.detail li {
+  margin-bottom: 6px;
+}
+
+/* --- Updated Profile Section to align icons right of the title --- */
+#profile .intro-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+
+#profile .intro-text {
+  flex-grow: 1;
+  min-width: 0;
+}
+
+#profile .profile-name {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: var(--apple-black);
+  white-space: nowrap;
+  padding-left: 0; /* 去掉左侧padding */
+  border-left: none; /* 去掉左侧竖线 */
+}
+
+.intro-icons {
+  flex-shrink: 0;
+  width: 280px; /* 适当减少尺寸以避免拥挤 */
+  height: 280px;
+}
+
+/* 调整字体和布局保持清晰一致 */
+.intro-text ul {
+  padding: 0;
+  list-style: none;
+}
+
+.intro-text .cv-entry {
+  flex-direction: row;
+  gap: 8px;
+}
+
+/* 响应式调整，确保小屏幕布局合理 */
+@media (max-width: 800px) {
+  #profile .intro-block {
+    flex-direction: column;
+    align-items: center;
+  }
+  .intro-icons {
+    margin-top: 20px;
+  }
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 700px) {
+  main {
+    padding: 10px;
+  }
+
+  .cv-section h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* --- Awards Grid Layout (2-column) --- */
+#awards ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 40px;
+  padding-left: 0;
+  margin: 0;
+}
+
+#awards li.cv-entry {
+  margin-bottom: 0;
+}
+
+/* Responsive: revert to 1-column layout on small screens */
+@media (max-width: 700px) {
+  #awards ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* --- Skills & Campus Grid Layout (2-column) --- */
+#skills ul,
+#campus ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 40px;
+  padding-left: 0;
+  margin: 0;
+}
+
+#skills li.cv-entry,
+#campus li.cv-entry {
+  margin-bottom: 0;
+}
+
+/* Responsive: revert to 1-column layout on small screens */
+@media (max-width: 700px) {
+  #skills ul,
+  #campus ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* --- Teaching & Service Grid Layout (2-column) --- */
+#teaching ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 40px;
+  padding-left: 0;
+  margin: 0;
+}
+
+#teaching li.cv-entry {
+  margin-bottom: 0;
+}
+
+
+
+.cv-entry a {
+  color: var(--apple-black);
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.cv-entry a:hover {
+  color: #2563eb; /* blue-600 */
+}
+
+/* Responsive: revert to 1-column layout on small screens */
+@media (max-width: 700px) {
+  #teaching ul {
+    grid-template-columns: 1fr;
+  }
+}

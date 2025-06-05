@@ -1,0 +1,271 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.65);  /* translucent white */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 0 32px;                        /* reduce side padding so menu fits */
+  box-sizing: border-box;
+}
+
+/* right‑aligned nav container */
+header nav {
+  display: flex;
+  justify-content: flex-end;   /* push items to right */
+  align-items: center;         /* vertical‑center children */
+  min-height: 60px;            /* consistent bar height */
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 36px;
+}
+
+header nav ul li {
+  display: flex;
+  align-items: center;         /* keep links / buttons on same baseline */
+}
+
+header nav ul li a {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--apple-black);      /* black text on white bar */
+  text-decoration: none;
+  transition: color 0.25s;
+  padding: 0;
+  line-height: 60px;            /* for perfect vertical centering */
+}
+
+header nav ul li a:hover {
+  color: var(--accent-orange);    /* orange on hover */
+}
+
+/* -------  Layout for projects.html  ------- */
+:root {
+  --apple-black: #1d1d1f;
+  --apple-white: #ebebec;
+  --grey-line: rgba(235, 235, 236, 0.25);
+  --tag-purple: #6951ff;
+  --tag-radius: 4px;
+}
+
+/* page wrapper */
+.work-list {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 40px 0 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* each entry */
+.work-item {
+  display: grid;
+  grid-template-columns: 300px 1fr 90px; /* thumbnail | meta | year */
+  gap: 40px;
+  align-items: flex-start;
+  border-top: 1.5px dashed #b6b6b8;
+  padding-top: 32px;
+}
+
+.work-item:first-of-type {
+  border-top: none;
+}
+
+/* thumbnail */
+.work-thumb img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* meta text */
+.work-meta h2 {
+  margin: 0 0 8px 0;
+  font-size: 1.7rem;      /* bigger, bolder headline */
+  line-height: 1.35;
+  color: var(--apple-black);
+}
+
+.work-authors {
+  margin: 0 0 10px 0;
+  font-size: 1.05rem;
+  color: #333;
+  line-height: 1.5;           /* more breathing room */
+}
+
+.work-tags {
+  display: inline;          /* behave like normal inline text */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.work-tags .tag {
+  display: inline-block;    /* keep pill shape */
+  margin-right: 8px;        /* space before conference text */
+  background: var(--tag-purple);
+  color: #fff;
+  border-radius: var(--tag-radius);
+  padding: 4px 12px;      /* bigger pill */
+  font-size: 0.9rem;      /* larger text */
+  font-weight: 600;
+}
+
+/* conference description, inline with tag list */
+.work-conf {
+  display: inline;          /* stay on same line as tag */
+  font-size: 0.95rem;
+  color: #6a6a6a;           /* slightly lighter grey */
+}
+
+.work-links {
+  display: flex;
+  gap: 20px;                /* loosen link list spacing */
+  flex-wrap: wrap;
+}
+
+.work-links a {
+  font-size: 1rem;            /* was 0.85rem */
+  color: var(--apple-black);
+  text-decoration: none;
+}
+
+/* first link inside each work (Homepage) */
+.work-links a:first-child {
+  font-weight: 600;
+  position: relative;
+  padding-left: 22px;               /* room for icon */
+}
+
+.work-links a:first-child::before {
+  content: "🔗";                    /* Unicode link icon */
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.work-links a:hover {
+  text-decoration: underline;
+}
+
+/* year column */
+.work-year {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #c2c2c4;
+  text-align: right;
+  line-height: 1;
+  margin-top: 4px;
+}
+
+/* ----------  Responsive  ---------- */
+@media (max-width: 900px) {
+  .work-item {
+    grid-template-columns: 240px 1fr 70px;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 700px) {
+  .work-item {
+    grid-template-columns: 1fr;
+  }
+  .work-thumb img {
+    width: 100%;
+  }
+  .work-year {
+    display: none;
+  }
+}
+
+/* mobile drawer & hamburger (re‑use main site styles) */
+@media (max-width: 700px) {
+  /* hide desktop menu & keep smaller gap */
+  header nav ul { 
+    display: none; 
+    gap: 24px; 
+  }
+  .mobile-drawer {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 75%;                     /* 75 % of screen */
+    height: 100%;
+    background: #ebebec;
+    transition: left 0.3s ease;
+    padding: 80px 28px;
+    box-shadow: 4px 0 12px rgba(0,0,0,0.2);
+    z-index: 1000;
+  }
+  .mobile-drawer.open { 
+    left: 0; 
+    display: block; 
+  }
+
+  .drawer-links li { margin-bottom: 32px; } /* adjusted spacing */
+  .drawer-links a {
+    font-size: 1.8rem;              /* larger for thumb navigation */
+    font-weight: 600;
+    color: var(--apple-black);
+    text-decoration: none;
+    line-height: 1.2;               /* added line-height */
+  }
+
+  /* ensure hamburger button visible */
+  .hamburger {
+    background: none;
+    border: none;
+    position: absolute;
+    top: 18px;
+    right: 5vw;
+    display: block;
+  }
+}
+
+.page-title {
+  margin: 40px 0 50px 60px;
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--apple-black);
+}
+
+/* language switch buttons */
+#lang-en,
+#lang-zh {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  color: #000;
+  border: 1.5px solid #000;
+  border-radius: 4px;
+  padding: 4px 14px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.25s;
+  margin: 0;                 /* remove previous offset */
+}
+
+#lang-en:hover,
+#lang-zh:hover {
+  background: #e6e6e6;
+}
+
+.work-abstract {
+  margin-top: 12px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #4a4a4a;
+  max-width: 100%;
+}

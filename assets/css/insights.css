@@ -1,0 +1,223 @@
+/ * pull in an elegant serif for filmstrip captions */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap');
+
+/* prevent horizontal scroll due to very wide film‑strips */
+body{
+  overflow-x: hidden;
+}
+
+/* keep the gallery the same width as the rest of the pages */
+#filmstrip-gallery{
+  width: 100%;       /* full‑bleed gallery */
+  max-width: none;   /* remove 1180px cap */
+  margin: 0;         /* no auto‑centering */
+  padding: 0;        /* no side gutters */
+  box-sizing: border-box;
+}
+
+/* --------------  Global Navbar (shared with projects) -------------- */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.65);  /* translucent white */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 0 32px;                        /* reduce side padding so menu fits */
+  box-sizing: border-box;
+}
+
+/* right‑aligned nav container */
+header nav {
+  display: flex;
+  justify-content: flex-end;   /* push items to right */
+  align-items: center;         /* vertical‑center children */
+  min-height: 60px;            /* consistent bar height */
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 36px;
+}
+
+header nav ul li {
+  display: flex;
+  align-items: center;         /* keep links / buttons on same baseline */
+}
+
+header nav ul li a {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--apple-black);      /* black text on white bar */
+  text-decoration: none;
+  transition: color 0.25s;
+  padding: 0;
+  line-height: 60px;            /* vertical centering */
+}
+
+header nav ul li a:hover {
+  color: var(--accent-orange);
+}
+
+/* language switch buttons */
+#lang-en,
+#lang-zh {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  color: #000;
+  border: 1.5px solid #000;
+  border-radius: 4px;
+  padding: 4px 14px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.25s;
+  margin: 0;
+}
+
+#lang-en:hover,
+#lang-zh:hover {
+  background: #e6e6e6;
+}
+
+
+/* 3‑D filmstrip base */
+.filmstrip {
+  position: relative;
+  overflow-x: hidden;   /* clip horizontally so first frame flushes left */
+  overflow-y: visible;   /* allow caption inside the same block */
+  perspective: 900px;         /* adds depth */
+  /* keep every strip at a consistent, view‑friendly height */
+  height: auto;            /* container grows to fit caption */
+  margin-top: 32px;        /* restore gap below the header */
+  margin-bottom: 40px;
+  padding-top: 46px;   /* reserve space for caption */
+}
+
+/* Caption sits above each film‑strip, aligned left */
+.filmstrip-caption {
+  position: absolute;
+  top: 8px;                /* place caption inside the reserved padding */
+  left: 60px;             /* align with page title / strip left edge */
+  font-size: 1.6rem;              /* larger, more premium */
+  font-weight: 500;
+  font-family: 'Playfair Display', Georgia, serif;
+  color: var(--apple-black);
+  background: none;
+  z-index: 10;         /* keep caption above strip images */
+  pointer-events: none;   /* captions don't block hover */
+}
+
+/* extra space between rows of film‑strips */
+.filmstrip + .filmstrip {
+  margin-top: 100px;   /* increase vertical spacing */
+}
+
+/* Make the reel a flex container and center items vertically */
+.filmstrip .reel {
+  height: 260px;            /* fixed image strip height */
+  transform-style: preserve-3d;      /* allow children to keep depth */
+  display: flex;
+  align-items: center;
+  /* animation-duration: 50s;   slower default, overwritten by JS if desired */
+  gap: 0;                /* eliminate inline‑block spacing */
+  justify-content: flex-start;   /* ensure first frame is flush left */
+  min-width: 200%; /* allows scrolling loop effect */
+}
+
+/* Force each image to fill the available height, preserving aspect ratio */
+.filmstrip .reel img {
+  height: 100%;
+  width: auto;
+  object-fit: cover; /* crops if necessary to avoid distortion */
+  transform-origin: center center;
+  transform: translateZ(-40px);      /* push frames “into” the strip */
+  flex-shrink: 0;            /* keep each frame fixed width for smooth scroll */
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  will-change: transform;
+  z-index: 1;
+}
+
+
+
+/* Base rule: captions should always be visible */
+.filmstrip-caption{
+  opacity:1 !important;
+  visibility:visible !important;
+  transition:none;          /* prevent unintended fade‑in */
+  text-decoration: none;   /* 去掉链接下划线 */
+  cursor: pointer;         /* 鼠标悬停显示手型 */
+}
+
+.filmstrip-caption:hover {
+  opacity: 0.8;            /* 悬停时稍微半透明提示可交互 */
+}
+/* Always show captions – remove any accidental fade–in/out overrides */
+
+/* match page heading style with projects.html */
+.page-title {
+  margin: 40px 0 50px 60px;
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--apple-black);
+}
+
+/* enlarge zoomed frame and bring to front (JS adds .zoomed) */
+
+
+/* --- make insight carousel scrollable without affecting page --- */
+.insight-carousel{
+  display:flex;
+  gap:24px;
+  overflow-x:auto;     /* allow horizontal scroll only */
+  overflow-y:hidden;   /* block vertical scroll inside carousel */
+  scroll-behavior:smooth;
+  -webkit-overflow-scrolling: touch;  /* momentum on iOS */
+  touch-action: pan-x;  /* let pointer events manage horizontal drag */
+  overscroll-behavior: contain;   /* stop page scroll while inside */
+  cursor: grab;
+}
+.insight-carousel::-webkit-scrollbar{display:none;} /* hide bar */
+.insight-carousel.dragging { cursor: grabbing; }
+
+/* ------------------------------------------------------------------ */
+/*  Mobile viewport adjustments                                       */
+/* ------------------------------------------------------------------ */
+@media (max-width: 768px) {
+
+  /* Hide the full nav list, rely on hamburger toggle instead */
+  header nav ul {
+    display: none;
+  }
+
+  /* You can style your hamburger icon (assumed .menu-toggle) here */
+  .menu-toggle {
+    display: block;           /* ensure the icon shows on mobile */
+    cursor: pointer;
+  }
+
+  .filmstrip .reel img {
+    height: 140px;
+  }
+}
+
+/* --------- Auto-scroll animation for filmstrip --------- */
+.auto-scroll {
+  animation: scroll-left 60s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
