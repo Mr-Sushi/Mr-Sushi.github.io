@@ -2,315 +2,355 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xin Shu</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xin Shu</title>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
-    <!-- 问候语动画容器 -->
-    <div id="greeting-animation">
-        <span class="greeting">Hello</span>
-        <span class="greeting">Bonjour</span>
-        <span class="greeting">Hola</span>
-        <span class="greeting">こんにちは</span>
-        <span class="greeting">안녕하세요</span>
-        <span class="greeting">Привет</span>
-        <span class="greeting">Ciao</span>
-        <span class="greeting">Hei</span>
-        <span class="greeting">你好</span>
-    </div>
-
-    <!-- 主内容 -->
-    <main>
-        <!-- 导航栏 -->
-
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="#about" data-translate="home">Home</a></li>
-                    <li><a href="projects.html" data-translate="projects">Projects</a></li>
-                    <li><a href="insights.html" data-translate="insights">Insights</a></li>
-                    <li><a href="cv.html" data-translate="contact">CV</a></li>
-                    <li>
-                        <button id="lang-en">EN</button>
-                        <button id="lang-zh">中文</button>
-                    </li>
-                </ul>
-                <!-- mobile hamburger button -->
-                <button id="hamburger-btn" class="hamburger">
-                  <img src="assets/images/List.png" alt="menu icon">
-                </button>
-            </nav>
-            <!-- mobile drawer -->
-            <div id="mobile-drawer" class="mobile-drawer">
-              <button id="drawer-close" class="drawer-close">×</button>
-              <ul class="drawer-links">
-                <li><a href="#home" data-translate="home">Home</a></li>
-                <li><a href="projects.html" data-translate="projects">Projects</a></li>
-                <li><a href="insights.html" data-translate="insights">Insights</a></li>
-                <li><a href="cv.html" data-translate="contact">CV</a></li>
-                <li class="drawer-lang">
-                  <button id="drawer-lang-en">EN</button>
-                  <button id="drawer-lang-zh">中文</button>
-                </li>
-              </ul>
-            </div>
-        </header>
-
-
-        <!-- 主内容：Hero + 动态打字 -->
-        <section class="hero-section" id="home">
-            <!-- 你的16:9横向照片 -->
-            <img src="assets/images/me.jpg" alt="My Photo" class="hero-background" />
-
-            <!-- 在图片上覆盖一层渐变，可通过CSS伪元素 ::after 或一个独立的 overlay div -->
-            <div class="hero-content">
-                <!-- 标题：固定前缀 + 动态打字区域 -->
-                <h1>
-                    Hey, I’m Xin Shu.👋
-                    <br />
-                    I build
-                    <span id="typed-text" class="typed-text"></span>
-                    <span class="cursor">&nbsp;</span>
-                </h1>
-                <p>PhD Candidate specializing in HCI, AI, and Multimodal technologies.</p>
-                <p>Exploring innovative ways to improve music education and user engagement.</p>
-            </div>
-        </section>
-
-
-<!-- About Section -->
-<section id="about">
-    <div class="container">
-      <div class="row">
-        <div class="about-col-1">
-          <img src="assets/images/XinShu.jpg" alt="Xin Shu Photo">
-        </div>
-        <div class="about-col-2"> 
-          <h1 class="sub-title" data-translate="aboutTitle">About Me</h1>
-          
-          <p data-translate="aboutP1">My name is Xin Shu. I’m currently pursuing my PhD at <a href="https://openlab.ncl.ac.uk/" target="_blank" rel="noopener">OpenLab</a>, <a href="https://www.ncl.ac.uk/" target="_blank" rel="noopener">Newcastle University</a>, supervised by <a href="http://shilei.me" target="_blank" rel="noopener">Lei Shi</a> and <a href="https://shuxinhuan.github.io/" target="_blank" rel="noopener">Xinhuan Shu</a>. I am also a visiting PhD student at the <a href="https://aimlab-haptics.com/" target="_blank" rel="noopener">AimLab</a> at <a href="https://nyuad.nyu.edu/" target="_blank" rel="noopener">New York University Abu Dhabi (NYUAD)</a>, under the supervision of <a href="https://nyuad.nyu.edu/en/academics/divisions/engineering/faculty/mohamad-eid.html" target="_blank" rel="noopener">Mohammad Eid</a>.</p>
-
-        <p data-translate="aboutP2">My research interests broadly encompass Human-Computer Interaction (HCI), with particular emphasis on Artificial Intelligence (AI), Large Language Models (LLM), Virtual Reality (VR), Haptic Technologies, and Multimodal Interaction. My work focuses on leveraging emerging technologies to enhance learning experiences, improve user engagement, and create more intuitive and natural ways for people to interact with technology.</p> 
-
-        <p data-translate="aboutP3">Before my PhD, I earned my master’s degree in Design Informatics from the <a href="https://www.ed.ac.uk/" target="_blank" rel="noopener">University of Edinburgh</a>. My undergraduate education includes a dual degree from <a href="https://www.jxufe.edu.cn/" target="_blank" rel="noopener">Jiangxi University of Finance and Economics (China)</a> and <a href="https://www.du.se/en/" target="_blank" rel="noopener">Dalarna University (Sweden)</a>, along with an exchange program at the <a href="https://www.oulu.fi/en" target="_blank" rel="noopener">University of Oulu (Finland)</a>. Additionally, I gained valuable industry experience through product manager internships at <a href="https://hr.163.com/index.html" target="_blank" rel="noopener">NetEase</a>, <a href="https://www.didiglobal.com/" target="_blank" rel="noopener">DiDi</a>, <a href="https://www.kuaishou.com/en" target="_blank" rel="noopener">Kuaishou</a>, and <a href="https://shopee.com/" target="_blank" rel="noopener">Shopee</a>, and I also served as a research assistant at <a href="https://www.tsinghua.edu.cn/en/" target="_blank" rel="noopener">Tsinghua University</a>.</p>
-            
-        <p data-translate="aboutP4">Outside of academia and work, I am passionate about photography, music, and film, interests that continually inspire me to explore innovative intersections between technology, art, and culture.</p>
-        </div>
-      </div>
-    </div>
-
-
-
-
-<!-- ========= My Projects (overview) ========= -->
-<section id="projects" class="projects-overview">
-    <h2 data-translate="projectsTitle">Projects</h2>
-  
-    <!-- 卡片 -->
-    <div class="work-cards">
-  
-      <!-- Card 1 -->
-      <a href="projects.html#proj-fretmate" class="work-card">
-        <img src="assets/projectImages/FretMate.jpg" alt="FretMate thumbnail">
-        <h3 data-translate="proj1Title">FretMate</h3>
-        <p class="work-caption" data-translate="proj1Desc">FretMate delivers AI‑driven guidance and haptic cues to accelerate guitar learning.</p>
-      </a>
-  
-      <!-- Card 2 -->
-      <a href="projects.html#proj-fretflow" class="work-card">
-        <img src="assets/projectImages/FretFlow.jpg" alt="FretFlow thumbnail">
-        <h3 data-translate="proj2Title">FretFlow</h3>
-        <p class="work-caption" data-translate="proj2Desc">FretFlow blends haptic rhythm cues with GenAI feedback to keep players in the flow.</p>
-      </a>
-  
-      <!-- Card 3 -->
-      <a href="projects.html#proj-av" class="work-card">
-        <img src="assets/projectImages/AutonomousVehicle.jpg" alt="Autonomous vehicle thumbnail">
-        <h3 data-translate="proj3Title">Autonomous Vehicle UX</h3>
-        <p class="work-caption" data-translate="proj3Desc">A simulated autonomous‑vehicle cockpit that explores user trust and emotional response.</p>
-      </a>
-  
-    </div>
-  
-    <!-- “See more” 跳到完整列表页 -->
-    <div class="see-more-wrapper">
-      <a href="projects.html" class="btn-see-more" data-translate="seeMoreBtn">See more</a>
-    </div>
-  </section>
-
-
-
-        <!-- ========= Insights (overview) ========= -->
-        <section id="insights" class="insights-overview">
-          <h2 data-translate="insightsTitle">Insights</h2>
-        
-          <!-- horizontally scrollable carousel -->
-          <div class="insight-carousel">
-            <div class="insight-card hover-3d">
-              <img src="assets/images/InsightsTopphotos/Finland.jpg" alt="Finland">
-              <p class="insight-caption" data-translate="insightFinland">Finland</p>
-            </div>
-
-            <div class="insight-card hover-3d">
-              <img src="assets/images/InsightsTopphotos/Sweden.jpg" alt="Sweden">
-              <p class="insight-caption" data-translate="insightSweden">Sweden</p>
-            </div>
-
-            <div class="insight-card hover-3d">
-              <img src="assets/images/InsightsTopphotos/Edinburgh.jpeg" alt="Edinburgh">
-              <p class="insight-caption" data-translate="insightEdinburgh">Edinburgh</p>
-            </div>
-
-            <div class="insight-card hover-3d">
-                <img src="assets/images/InsightsTopphotos/UK2.jpg" alt="Newcastle">
-                <p class="insight-caption" data-translate="insightNewcastle">Newcastle</p>
-              </div>
-
-              <div class="insight-card hover-3d">
-                <img src="assets/images/InsightsTopphotos/UK.jpg" alt="London">
-                <p class="insight-caption" data-translate="insightLondon">London</p>
-              </div>
-
-              <div class="insight-card hover-3d">
-                <img src="assets/images/InsightsTopphotos/UAE.jpg" alt="United Arab Emirates">
-                <p class="insight-caption" data-translate="insightAbuDhabi">Abu Dhabi</p>
-              </div>
-
-              <div class="insight-card hover-3d">
-                <img src="assets/images/InsightsTopphotos/Italy.jpeg" alt="Italy">
-                <p class="insight-caption" data-translate="insightItaly">Italy</p>
-              </div>
-
-              <div class="insight-card hover-3d">
-                <img src="assets/images/InsightsTopphotos/France.jpeg" alt="France">
-                <p class="insight-caption" data-translate="insightFrance">France</p>
-              </div>
-
-            <div class="insight-card hover-3d">
-              <img src="assets/images/InsightsTopphotos/Iceland.jpg" alt="Iceland">
-              <p class="insight-caption" data-translate="insightIceland">Iceland</p>
-            </div>
-
-            <div class="insight-card hover-3d">
-              <img src="assets/images/InsightsTopphotos/Turkey.jpeg" alt="Turkey">
-              <p class="insight-caption" data-translate="insightTurkey">Turkey</p>
-      </div>
-
-            <div class="insight-card hover-3d">
-              <img src="assets/images/InsightsTopphotos/China.jpeg" alt="China">
-              <p class="insight-caption" data-translate="insightChina">China</p>
-            </div>
-
-              <div class="insight-card hover-3d">
-                <img src="assets/images/InsightsTopphotos/Greece.jpg" alt="Greece">
-                <p class="insight-caption" data-translate="insightGreece">Greece</p>
-            </div>
-
-                <div class="insight-card hover-3d">
-                    <img src="assets/images/InsightsTopphotos/Portugal.jpg" alt="Portugal">
-                    <p class="insight-caption" data-translate="insightPortugal">Portugal</p>
-            </div>
-            <div class="insight-card hover-3d">
-              <img src="assets/images/InsightsTopphotos/Montenegro.jpeg" alt="Montenegro">
-              <p class="insight-caption" data-translate="insightMontenegro">Montenegro</p>
-              </div>
-
-            <div class="insight-card hover-3d">
-              <img src="assets/images/InsightsTopphotos/Ireland.jpeg" alt="Ireland">
-              <p class="insight-caption" data-translate="insightIreland">Ireland</p>
-        </div>
-
-        <div class="insight-card hover-3d">
-          <img src="assets/images/InsightsTopphotos/Oxford.jpeg" alt="Oxford">
-          <p class="insight-caption" data-translate="insightOxford">Cambridge & Oxford</p>
-          </div>
-            
-      <div class="insight-card hover-3d">
-        <img src="assets/images/InsightsTopphotos/Pets.jpeg" alt="Pets">
-        <p class="insight-caption" data-translate="insightPets">Pets</p>
-      </div>
-
-      <div class="insight-card hover-3d">
-        <img src="assets/images/InsightsTopphotos/Moments.jpeg" alt="Moments">
-        <p class="insight-caption" data-translate="insightMoments">Moments</p>
-    </div>
-
-
-    <div class="insight-card hover-3d">
-      <img src="assets/images/InsightsTopphotos/Selfie.jpeg" alt="Selfie">
-      <p class="insight-caption" data-translate="insightSelfie">Selfie</p>
+  <!-- 问候语动画容器 -->
+  <div id="greeting-animation">
+    <span class="greeting">Hello</span>
+    <span class="greeting">Bonjour</span>
+    <span class="greeting">Hola</span>
+    <span class="greeting">こんにちは</span>
+    <span class="greeting">안녕하세요</span>
+    <span class="greeting">Привет</span>
+    <span class="greeting">Ciao</span>
+    <span class="greeting">Hei</span>
+    <span class="greeting">你好</span>
+    <button id="skip-greeting"
+      style="position:absolute;bottom:2rem;right:2rem;background:rgba(255,255,255,0.2);border:1px solid rgba(255,255,255,0.6);color:#fff;padding:0.4rem 1.2rem;border-radius:20px;cursor:pointer;font-size:0.85rem;backdrop-filter:blur(4px);">Skip
+      ›</button>
   </div>
 
+  <!-- 主内容 -->
+  <main>
+    <!-- 导航栏 -->
 
-
-          </div>
-        
-          <div class="see-more-wrapper">
-            <a href="insights.html" class="btn-see-more" data-translate="exploreMoreBtn">Explore more</a>
-          </div>
-        </section>
-
-        
-
-        <!-- ========= Contact ========= -->
-<section id="contact" class="contact">
-  <div class="container">
-    <div class="row">
-
-      <!-- ===== Left column : info + social + CV ===== -->
-      <div class="contact-left">
-        <h2 data-translate="contactTitle">Contact Me</h2>
-
-        <ul class="contact-list">
-          <li><span class="ci-icon">✉️</span>sushishuxin@gmail.com</li>
-          <li><span class="ci-icon">📞</span>+86 13979323903</li>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#about" data-translate="home">Home</a></li>
+          <li><a href="projects.html" data-translate="projects">Projects</a></li>
+          <li><a href="insights.html" data-translate="insights">Insights</a></li>
+          <li><a href="cv.html" data-translate="contact">CV</a></li>
+          <li>
+            <button id="lang-en">EN</button>
+            <button id="lang-zh">中文</button>
+          </li>
         </ul>
+        <!-- mobile hamburger button -->
+        <button id="hamburger-btn" class="hamburger">
+          <img src="assets/images/List.png" alt="menu icon">
+        </button>
+      </nav>
+      <!-- mobile drawer -->
+      <div id="mobile-drawer" class="mobile-drawer">
+        <button id="drawer-close" class="drawer-close">×</button>
+        <ul class="drawer-links">
+          <li><a href="#home" data-translate="home">Home</a></li>
+          <li><a href="projects.html" data-translate="projects">Projects</a></li>
+          <li><a href="insights.html" data-translate="insights">Insights</a></li>
+          <li><a href="cv.html" data-translate="contact">CV</a></li>
+          <li class="drawer-lang">
+            <button id="drawer-lang-en">EN</button>
+            <button id="drawer-lang-zh">中文</button>
+          </li>
+        </ul>
+      </div>
+    </header>
 
-        <div class="social-links">
-          <a href="https://github.com/Mr-Sushi"><img src="assets/images/github.png" alt="LinkedIn"></a>
-          <a href="https://www.xiaohongshu.com/user/profile/5f4e1e940000000001000acc?xsec_token=YBxKEMt8-7S5OWM2LlV_DPgzG6yi-6juI5bHcHqjsM7MI=&xsec_source=app_share&xhsshare=CopyLink&appuid=5f4e1e940000000001000acc&apptime=1745177252&share_id=a88116e57ee84502a5040fae8adfb58b"><img src="assets/images/Rednote.png" alt="Xiaohongshu"></a>
-          <a href="https://www.instagram.com/sushishuxin26?igsh=eWpubm4yNWpwMjJo&utm_source=qr"><img src="assets/images/instgram.png" alt="Instagram"></a>
-          <a href="https://www.linkedin.com/in/sushi-shuxin/"><img src="assets/images/Linkedin.png" alt="LinkedIn"></a>
+
+    <!-- 主内容：Hero + 动态打字 -->
+    <section class="hero-section" id="home">
+      <!-- 你的16:9横向照片 -->
+      <img src="assets/images/me.jpg" alt="My Photo" class="hero-background" />
+
+      <!-- 在图片上覆盖一层渐变，可通过CSS伪元素 ::after 或一个独立的 overlay div -->
+      <div class="hero-content">
+        <!-- 标题：固定前缀 + 动态打字区域 -->
+        <h1>
+          <span data-translate="heroGreeting">Hey, I'm Xin Shu.👋</span>
+          <br />
+          <span data-translate="heroIBuild">I build</span>
+          <span id="typed-text" class="typed-text"></span>
+          <span class="cursor">&nbsp;</span>
+        </h1>
+        <p data-translate="heroDesc1">PhD Candidate specializing in HCI, AI, and Multimodal technologies.</p>
+        <p data-translate="heroDesc2">Exploring innovative ways to improve music education and user engagement.</p>
+      </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="assets/images/XinShu.jpg" alt="Xin Shu Photo">
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title" data-translate="aboutTitle">About Me</h1>
+
+            <p data-translate="aboutP1">My name is Xin Shu. I’m currently pursuing my PhD at <a
+                href="https://openlab.ncl.ac.uk/" target="_blank" rel="noopener">OpenLab</a>, <a
+                href="https://www.ncl.ac.uk/" target="_blank" rel="noopener">Newcastle University</a>, supervised by <a
+                href="http://shilei.me" target="_blank" rel="noopener">Lei Shi</a> and <a
+                href="https://shuxinhuan.github.io/" target="_blank" rel="noopener">Xinhuan Shu</a>. I am also a
+              visiting PhD student at the <a href="https://aimlab-haptics.com/" target="_blank"
+                rel="noopener">AimLab</a> at <a href="https://nyuad.nyu.edu/" target="_blank"
+                rel="noopener">New York University Abu Dhabi (NYUAD)</a>, under the supervision of <a
+                href="https://nyuad.nyu.edu/en/academics/divisions/engineering/faculty/mohamad-eid.html" target="_blank"
+                rel="noopener">Mohammad Eid</a>.</p>
+
+            <p data-translate="aboutP2">My research interests broadly encompass Human-Computer Interaction (HCI), with
+              particular emphasis on Artificial Intelligence (AI), Large Language Models (LLM), Virtual Reality (VR),
+              Haptic Technologies, and Multimodal Interaction. My work focuses on leveraging emerging technologies to
+              enhance learning experiences, improve user engagement, and create more intuitive and natural ways for
+              people to interact with technology.</p>
+
+            <p data-translate="aboutP3">Before my PhD, I earned my master’s degree in Design Informatics from the <a
+                href="https://www.ed.ac.uk/" target="_blank" rel="noopener">University of Edinburgh</a>. My
+              undergraduate education includes a dual degree from <a href="https://www.jxufe.edu.cn/" target="_blank"
+                rel="noopener">Jiangxi University of Finance and Economics (China)</a> and <a
+                href="https://www.du.se/en/" target="_blank" rel="noopener">Dalarna University (Sweden)</a>, along with
+              an exchange program at the <a href="https://www.oulu.fi/en" target="_blank"
+                rel="noopener">University of Oulu (Finland)</a>. Additionally, I gained valuable industry experience
+              through product manager internships at <a href="https://hr.163.com/index.html" target="_blank"
+                rel="noopener">NetEase</a>, <a href="https://www.didiglobal.com/" target="_blank"
+                rel="noopener">DiDi</a>, <a href="https://www.kuaishou.com/en" target="_blank"
+                rel="noopener">Kuaishou</a>, and <a href="https://shopee.com/" target="_blank"
+                rel="noopener">Shopee</a>, and I also served as a research assistant at <a
+                href="https://www.tsinghua.edu.cn/en/" target="_blank" rel="noopener">Tsinghua University</a>.</p>
+
+            <p data-translate="aboutP4">Outside of academia and work, I am passionate about photography, music, and
+              film, interests that continually inspire me to explore innovative intersections between technology, art,
+              and culture.</p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <!-- ========= My Projects (overview) ========= -->
+      <section id="projects" class="projects-overview">
+        <h2 data-translate="projectsTitle">Projects</h2>
+
+        <!-- 卡片 -->
+        <div class="work-cards">
+
+          <!-- Card 1 -->
+          <a href="projects.html#proj-fretmate" class="work-card">
+            <img src="assets/projectImages/FretMate.jpg" alt="FretMate thumbnail">
+            <h3 data-translate="proj1Title">FretMate</h3>
+            <p class="work-caption" data-translate="proj1Desc">FretMate delivers AI‑driven guidance and haptic cues to
+              accelerate guitar learning.</p>
+          </a>
+
+          <!-- Card 2 -->
+          <a href="projects.html#proj-fretflow" class="work-card">
+            <img src="assets/projectImages/FretFlow.jpg" alt="FretFlow thumbnail">
+            <h3 data-translate="proj2Title">FretFlow</h3>
+            <p class="work-caption" data-translate="proj2Desc">FretFlow blends haptic rhythm cues with GenAI feedback to
+              keep players in the flow.</p>
+          </a>
+
+          <!-- Card 3 -->
+          <a href="projects.html#proj-av" class="work-card">
+            <img src="assets/projectImages/AutonomousVehicle.jpg" alt="Autonomous vehicle thumbnail">
+            <h3 data-translate="proj3Title">Autonomous Vehicle UX</h3>
+            <p class="work-caption" data-translate="proj3Desc">A simulated autonomous‑vehicle cockpit that explores user
+              trust and emotional response.</p>
+          </a>
+
         </div>
 
-        <div class="cv-wrapper">
-          <a href="assets/Xin SHU-CV.pdf" class="btn-download" download data-translate="downloadCV">Download CV</a>
+        <!-- “See more” 跳到完整列表页 -->
+        <div class="see-more-wrapper">
+          <a href="projects.html" class="btn-see-more" data-translate="seeMoreBtn">See more</a>
+        </div>
+      </section>
+
+
+
+      <!-- ========= Insights (overview) ========= -->
+      <section id="insights" class="insights-overview">
+        <h2 data-translate="insightsTitle">Insights</h2>
+
+        <!-- horizontally scrollable carousel -->
+        <div class="insight-carousel">
+          <div class="insight-card hover-3d">
+            <img src="assets/images/InsightsTopphotos/Finland.jpg" alt="Finland">
+            <p class="insight-caption" data-translate="insightFinland">Finland</p>
+          </div>
+
+          <div class="insight-card hover-3d">
+            <img src="assets/images/InsightsTopphotos/Sweden.jpg" alt="Sweden">
+            <p class="insight-caption" data-translate="insightSweden">Sweden</p>
+          </div>
+
+          <div class="insight-card hover-3d">
+            <img src="assets/images/InsightsTopphotos/Edinburgh.jpeg" alt="Edinburgh">
+            <p class="insight-caption" data-translate="insightEdinburgh">Edinburgh</p>
+          </div>
+
+          <div class="insight-card hover-3d">
+            <img src="assets/images/InsightsTopphotos/UK2.jpg" alt="Newcastle">
+            <p class="insight-caption" data-translate="insightNewcastle">Newcastle</p>
+          </div>
+
+          <div class="insight-card hover-3d">
+            <img src="assets/images/InsightsTopphotos/UK.jpg" alt="London">
+            <p class="insight-caption" data-translate="insightLondon">London</p>
+          </div>
+
+          <div class="insight-card hover-3d">
+            <img src="assets/images/InsightsTopphotos/UAE.jpg" alt="United Arab Emirates">
+            <p class="insight-caption" data-translate="insightAbuDhabi">Abu Dhabi</p>
+          </div>
+
+          <div class="insight-card hover-3d">
+            <img src="assets/images/InsightsTopphotos/Italy.jpeg" alt="Italy">
+            <p class="insight-caption" data-translate="insightItaly">Italy</p>
+          </div>
+
+          <div class="insight-card hover-3d">
+            <img src="assets/images/InsightsTopphotos/France.jpeg" alt="France">
+            <p class="insight-caption" data-translate="insightFrance">France</p>
+          </div>
+
+          <div class="insight-card hover-3d">
+            <img src="assets/images/InsightsTopphotos/Iceland.jpg" alt="Iceland">
+            <p class="insight-caption" data-translate="insightIceland">Iceland</p>
+          </div>
+
+          <div class="insight-card hover-3d">
+            <img src="assets/images/InsightsTopphotos/Turkey.jpeg" alt="Turkey">
+            <p class="insight-caption" data-translate="insightTurkey">Turkey</p>
+          </div>
+
+          <div class="insight-card hover-3d">
+            <img src="assets/images/InsightsTopphotos/China.jpeg" alt="China">
+            <p class="insight-caption" data-translate="insightChina">China</p>
+          </div>
+
+          <div class="insight-card hover-3d">
+            <img src="assets/images/InsightsTopphotos/Greece.jpg" alt="Greece">
+            <p class="insight-caption" data-translate="insightGreece">Greece</p>
+          </div>
+
+          <div class="insight-card hover-3d">
+            <img src="assets/images/InsightsTopphotos/Portugal.jpg" alt="Portugal">
+            <p class="insight-caption" data-translate="insightPortugal">Portugal</p>
+          </div>
+          <div class="insight-card hover-3d">
+            <img src="assets/images/InsightsTopphotos/Montenegro.jpeg" alt="Montenegro">
+            <p class="insight-caption" data-translate="insightMontenegro">Montenegro</p>
+          </div>
+
+          <div class="insight-card hover-3d">
+            <img src="assets/images/InsightsTopphotos/Ireland.jpeg" alt="Ireland">
+            <p class="insight-caption" data-translate="insightIreland">Ireland</p>
+          </div>
+
+          <div class="insight-card hover-3d">
+            <img src="assets/images/InsightsTopphotos/Oxford.jpeg" alt="Oxford">
+            <p class="insight-caption" data-translate="insightOxford">Cambridge & Oxford</p>
+          </div>
+
+          <div class="insight-card hover-3d">
+            <img src="assets/images/InsightsTopphotos/Pets.jpeg" alt="Pets">
+            <p class="insight-caption" data-translate="insightPets">Pets</p>
+          </div>
+
+          <div class="insight-card hover-3d">
+            <img src="assets/images/InsightsTopphotos/Moments.jpeg" alt="Moments">
+            <p class="insight-caption" data-translate="insightMoments">Moments</p>
+          </div>
+
+
+          <div class="insight-card hover-3d">
+            <img src="assets/images/InsightsTopphotos/Selfie.jpeg" alt="Selfie">
+            <p class="insight-caption" data-translate="insightSelfie">Selfie</p>
+          </div>
+
+
+
+        </div>
+
+        <div class="see-more-wrapper">
+          <a href="insights.html" class="btn-see-more" data-translate="exploreMoreBtn">Explore more</a>
+        </div>
+      </section>
+
+
+
+      <!-- ========= Contact ========= -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="row">
+
+            <!-- ===== Left column : info + social + CV ===== -->
+            <div class="contact-left">
+              <h2 data-translate="contactTitle">Contact Me</h2>
+
+              <ul class="contact-list">
+                <li><span class="ci-icon">✉️</span>sushishuxin@gmail.com</li>
+              </ul>
+
+              <div class="social-links">
+                <a href="https://github.com/Mr-Sushi"><img src="assets/images/github.png" alt="LinkedIn"></a>
+                <a
+                  href="https://www.xiaohongshu.com/user/profile/5f4e1e940000000001000acc?xsec_token=YBxKEMt8-7S5OWM2LlV_DPgzG6yi-6juI5bHcHqjsM7MI=&xsec_source=app_share&xhsshare=CopyLink&appuid=5f4e1e940000000001000acc&apptime=1745177252&share_id=a88116e57ee84502a5040fae8adfb58b"><img
+                    src="assets/images/Rednote.png" alt="Xiaohongshu"></a>
+                <a href="https://www.instagram.com/sushishuxin26?igsh=eWpubn4yNWpwMjJo&utm_source=qr"><img
+                    src="assets/images/instgram.png" alt="Instagram"></a>
+                <a href="https://www.linkedin.com/in/sushi-shuxin/"><img src="assets/images/Linkedin.png"
+                    alt="LinkedIn"></a>
+              </div>
+
+              <div class="cv-wrapper">
+                <a href="assets/Xin SHU-CV.pdf" class="btn-download" download
+                  data-translate="downloadCV">Download CV</a>
+              </div>
+            </div>
+
+            <!-- ===== Right column : form ===== -->
+            <div class="contact-right">
+              <form name="submit-to-google-sheet">
+                <input type="text" name="name" placeholder="" data-translate-placeholder="namePlaceholder"
+                  maxlength="20" required>
+                <input type="email" name="email" placeholder="" data-translate-placeholder="emailPlaceholder"
+                  maxlength="100" required>
+                <textarea name="message" rows="6" placeholder="" data-translate-placeholder="messagePlaceholder"
+                  maxlength="1500" required></textarea>
+                <button type="submit" class="btn-submit" data-translate="sendButton">Send</button>
+              </form>
+            </div>
+
+          </div> <!-- .row -->
+        </div> <!-- .container -->
+      </section>
+      <!-- Submission modal -->
+      <div id="send-modal" class="modal hidden">
+        <div class="modal-content">
+          <p id="modal-text" data-translate="sendSending">Sending…</p>
+          <div id="spinner" class="spinner"></div>
+          <button id="modal-ok" class="btn-submit hidden">OK</button>
         </div>
       </div>
-
-      <!-- ===== Right column : form ===== -->
-      <div class="contact-right">
-        <form name="submit-to-google-sheet">
-          <input type="text" name="name" placeholder="" data-translate-placeholder="namePlaceholder" maxlength="20" required>
-          <input type="email" name="email" placeholder="" data-translate-placeholder="emailPlaceholder" maxlength="100" required>
-          <textarea name="message" rows="6" placeholder="" data-translate-placeholder="messagePlaceholder" maxlength="1500" required></textarea>
-          <button type="submit" class="btn-submit" data-translate="sendButton">Send</button>
-        </form>
-      </div>
-
-    </div> <!-- .row -->
-  </div>   <!-- .container -->
-</section>
-    <!-- Submission modal -->
-    <div id="send-modal" class="modal hidden">
-      <div class="modal-content">
-        <p id="modal-text" data-translate="sendSending">Sending…</p>
-        <div id="spinner" class="spinner"></div>
-        <button id="modal-ok" class="btn-submit hidden">OK</button>
-      </div>
-    </div>
       <!-- ========= Footer ========= -->
       <footer class="copyright">
-        <p data-translate="copyrightText">© 2025 Xin Shu. All rights reserved.</p>
+        <p data-translate="copyrightText">© 2026 Xin Shu. All rights reserved.</p>
       </footer>
-    </main>
+  </main>
 
-    <script src="assets/js/translations.js"></script>
-    <script src="assets/js/main.js"></script>
+  <script src="assets/js/translations.js"></script>
+  <script src="assets/js/main.js"></script>
 
 
 </body>
