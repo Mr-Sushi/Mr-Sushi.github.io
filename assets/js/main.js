@@ -12,14 +12,12 @@ document.addEventListener("DOMContentLoaded", () => {
       // 尚未播放过：在 3 秒后隐藏问候语，显示主内容
       let greetingTimer = setTimeout(skipGreeting, 3000);
 
-      // Skip button
-      const skipBtn = document.getElementById("skip-greeting");
-      if (skipBtn) {
-        skipBtn.addEventListener("click", () => {
-          clearTimeout(greetingTimer);
-          skipGreeting();
-        });
-      }
+      // Click anywhere on the overlay to skip immediately
+      greetingAnimation.style.cursor = 'pointer';
+      greetingAnimation.addEventListener('click', () => {
+        clearTimeout(greetingTimer);
+        skipGreeting();
+      }, { once: true });
 
       function skipGreeting() {
         greetingAnimation.style.display = "none";
