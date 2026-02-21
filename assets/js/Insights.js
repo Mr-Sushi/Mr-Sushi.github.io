@@ -15,7 +15,7 @@ function getTranslatedCountryName(name) {
 /* ------------------------------------------------------------------ */
 document.addEventListener('DOMContentLoaded', () => {
   const manifestTag = document.getElementById('gallery-manifest');
-  const gallery     = document.getElementById('filmstrip-gallery');
+  const gallery = document.getElementById('filmstrip-gallery');
   if (!manifestTag || !gallery) return;
 
   /** manifest = { "Folder name": numberOfImages, … } */
@@ -29,9 +29,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /* --- strip wrapper ------------------------------------------------- */
     const strip = document.createElement('div');
-    strip.className        = 'filmstrip';
-    strip.dataset.speed    = '40';                     // px / s (default)
-    strip.dataset.direction= rtlToggle ? 'right' : 'left';
+    strip.className = 'filmstrip';
+    strip.dataset.speed = '40';                     // px / s (default)
+    strip.dataset.direction = rtlToggle ? 'right' : 'left';
     rtlToggle = !rtlToggle;
 
     /* --- image reel ---------------------------------------------------- */
@@ -45,13 +45,13 @@ document.addEventListener('DOMContentLoaded', () => {
       const img = document.createElement('img');
 
       // first try .jpeg, fall back to .jpg if missing
-      img.src     = `assets/InsightImage/${safeFolder}/${num}.jpeg`;
+      img.src = `assets/InsightImage/${safeFolder}/${num}.jpeg`;
       img.onerror = () => {
-        img.src     = `assets/InsightImage/${safeFolder}/${num}.jpg`;
+        img.src = `assets/InsightImage/${safeFolder}/${num}.jpg`;
         img.onerror = null;
       };
 
-      img.alt     = `${folder} – ${i}`;
+      img.alt = `${folder} – ${i}`;
       img.loading = 'lazy';
       reel.appendChild(img);
     }
@@ -62,13 +62,13 @@ document.addEventListener('DOMContentLoaded', () => {
       // 对于 Abu Dhabi，使用可点击链接跳转到详情页
       caption = document.createElement('a');
       caption.className = 'filmstrip-caption';
-      caption.href      = `detail/${encodeURIComponent(folder)}.html`;
-      caption.target    = '_blank';
+      caption.href = `detail/${encodeURIComponent(folder)}.html`;
+      caption.target = '_blank';
       caption.textContent = getTranslatedCountryName(folder);
     } else {
       // 其他不变，保持为 div
       caption = document.createElement('div');
-      caption.className   = 'filmstrip-caption';
+      caption.className = 'filmstrip-caption';
       caption.textContent = getTranslatedCountryName(folder);
     }
     strip.appendChild(caption);
@@ -82,55 +82,84 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 /* ------------------------------------------------------------------ */
-/* 2)  Scrolling / hover animation (previous code, wrapped in a fn)    */
+/* 2)  Scrolling / hover animation (requestAnimationFrame scroller)   */
 /* ------------------------------------------------------------------ */
 function startScrolling() {
+  let lastTime = performance.now();
+
   document.querySelectorAll('.filmstrip').forEach(strip => {
-    const inner = strip.querySelector('.reel');
-    if (!inner) return;
+    const reel = strip.querySelector('.reel');
+    if (!reel) return;
 
-    /* force eager load so widths are known immediately */
-    inner.querySelectorAll('img').forEach(img => img.loading = 'eager');
+    // First run setup
+    const imgs = Array.from(reel.querySelectorAll('img'));
+    reel.innerHTML = ''; // clear out
 
-    /* wait until all images in this strip have either loaded or errored */
-    const imgs = Array.from(inner.querySelectorAll('img'));
-    const loadPromises = imgs.map(img => {
-      return img.complete
-        ? Promise.resolve()
-        : new Promise(res => {
-            img.addEventListener('load', res, { once: true });
-            img.addEventListener('error', res, { once: true });
-          });
+    const half1 = document.createElement('div');
+    half1.className = 'reel-half';
+    imgs.forEach(img => half1.appendChild(img));
+    reel.appendChild(half1);
+
+    // Calculate how many clones we need to cover the screen
+    // Assume at least ~150px per image if unloaded
+    const estimatedW = imgs.length * 150;
+    const screenW = window.innerWidth;
+    const neededCopies = Math.max(2, Math.ceil((screenW * 2) / estimatedW));
+
+    // Create the required number of clones
+    for (let i = 1; i < neededCopies; i++) {
+      reel.appendChild(half1.cloneNode(true));
+    }
+
+    // Store state directly on reel DOM element natively
+    reel._pos = 0;
+    reel._speed = parseFloat(strip.dataset.speed) || 40;
+    reel._dir = strip.dataset.direction === 'right' ? 1 : -1;
+    reel._w = 0; // will be populated by ResizeObserver
+
+    // Use ResizeObserver to watch half1's width purely asynchronously
+    // This avoids layout thrashing from reading offsetWidth every frame
+    const ro = new ResizeObserver(entries => {
+      for (const entry of entries) {
+        reel._w = entry.contentRect.width;
+      }
     });
+    ro.observe(half1);
+  });
 
-    Promise.all(loadPromises).then(() => {
-      /* duplicate until we have at least one extra strip,
-         and enough to cover the viewport with margin       */
-      const origWidth = inner.scrollWidth;
-      while (inner.scrollWidth < strip.clientWidth + origWidth) {
-        inner.innerHTML += inner.innerHTML;
+  function animate(time) {
+    const delta = (time - lastTime) / 1000;
+    lastTime = time;
+
+    document.querySelectorAll('.filmstrip').forEach(strip => {
+      const reel = strip.querySelector('.reel');
+      if (!reel || reel._w === 0) return; // wait till width is known
+
+      const w = reel._w;
+
+      // If scrolling right and we are exactly at 0 to start, jump back by width to avoid white gap
+      if (reel._dir === 1 && reel._pos === 0) {
+        reel._pos = -w;
       }
 
-      /* configuration */
-      const speed     = parseFloat(strip.dataset.speed) || 40;       // px/s
-      const direction = strip.dataset.direction === 'right' 
-                        ? 'reverse' : 'normal';
-      const width     = origWidth;          // loop distance equals original reel width
-      const duration  = width / speed;                             // seconds
+      // Move by delta * speed
+      reel._pos += reel._dir * reel._speed * delta;
 
-      /* dynamic keyframes */
-      const animName = `scroll_${Math.random().toString(36).slice(2, 8)}`;
-      const styleTag = document.createElement('style');
-      styleTag.textContent = `
-        @keyframes ${animName} {
-          0%   { transform: translateX(0); }
-          100% { transform: translateX(-${width}px); }
-        }`;
-      document.head.appendChild(styleTag);
+      // Wrap around logic
+      if (reel._dir === -1 && reel._pos <= -w) {
+        // Scrolling left: jump back to start
+        reel._pos += w;
+      } else if (reel._dir === 1 && reel._pos >= 0) {
+        // Scrolling right: jump back by width
+        reel._pos -= w;
+      }
 
-      /* apply animation */
-      inner.style.animation          = `${animName} ${duration}s linear infinite`;
-      inner.style.animationDirection = direction;
+      reel.style.transform = `translateX(${reel._pos}px)`;
     });
-  });
+
+    requestAnimationFrame(animate);
+  }
+
+  // Kick off animation loop
+  requestAnimationFrame(animate);
 }
