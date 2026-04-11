@@ -185,6 +185,7 @@ const translations = {
     fretFlowPublication: "In Proceedings of ACM Conference on Human Factors in Computing Systems, 2026.",
     quizTraveller: "Quiz Traveller: A Crowdsourced Educational Game on Chat-Based Interactive Live-Streaming Platforms",
     quizTravellerPublication: "Proceedings of the 10th International GamiFIN Conference, 2026",
+    quizTravellerBestPaper: "🏆 Best Paper Award",
     somaditation: "Somaditation: A Multisensory VR Meditation Experience with a Wearable Glove",
     somaditationPublication: "In Proceedings of the ACM Conference on Tangible, Embedded, and Embodied Interaction, 2026",
 
@@ -381,6 +382,7 @@ const translations = {
     fretFlowPublication: "ACM CHI 2026 国际会议论文集",
     quizTraveller: "Quiz Traveller: A Crowdsourced Educational Game on Chat-Based Interactive Live-Streaming Platforms",
     quizTravellerPublication: "第10届 GamiFIN 国际会议论文集，2026",
+    quizTravellerBestPaper: "🏆 最佳论文奖",
     somaditation: "Somaditation: A Multisensory VR Meditation Experience with a Wearable Glove",
     somaditationPublication: "ACM TEI 2026 国际会议论文集",
 
