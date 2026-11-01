@@ -3,7 +3,10 @@ const albums=JSON.parse(await readFile('src/data/albums.json','utf8'));
 const html=await readFile('dist/index.html','utf8');
 const paths=['cv','projects','albums','about','gallery','studio','contact',...albums.map(a=>'albums/'+a.id)];
 for(const route of paths){await mkdir('dist/'+route,{recursive:true});await writeFile('dist/'+route+'/index.html',html.replace('https://xinshu.info/"','https://xinshu.info/'+route+'"'));}
-for(const [old,to] of Object.entries({'cv.html':'/cv','projects.html':'/projects','insights.html':'/albums','about.html':'/cv'})){await writeFile('dist/'+old,`<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0;url=${to}"><link rel="canonical" href="https://xinshu.info${to}"><a href="${to}">Continue</a>`);}
+// Pages resolves extensionless URLs to matching .html files before directories.
+// Serve the app in these aliases to avoid self-redirect loops.
+for(const route of ['cv','projects'])await writeFile('dist/'+route+'.html',html.replace('https://xinshu.info/"','https://xinshu.info/'+route+'"'));
+for(const [old,to] of Object.entries({'insights.html':'/albums/','about.html':'/cv/'})){await writeFile('dist/'+old,`<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0;url=${to}"><link rel="canonical" href="https://xinshu.info${to}"><a href="${to}">Continue</a>`);}
 await writeFile('dist/404.html',html);
 await writeFile('dist/.nojekyll','');
 await writeFile('dist/CNAME','xinshu.info\n');
