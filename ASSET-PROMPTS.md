@@ -25,3 +25,6 @@ Authored as articulated Canvas paths in Dachshund.jsx rather than a static image
 ## Publication artwork
 Studio door: retain wood panel geometry, ten handdrawn badges Scholar, ACM, CHI, IUI, UIST, DIS, NIME, IJHCS, IJHCI, AIED.
 Third corridor frame: graphite and muted ochre guitar island observatory, dachshund, telescope, constellations as music.
+
+## Replacement: The Borrowed Moon
+Quiet second-hand bookshop, a moon on a floor-lamp stand, empty reading chair, loose pages becoming birds outside an arched window. Spare graphite and pale yellow, generous negative space. Chosen as an independent surreal composition, not based on owner hobbies. Replaces third corridor painting.

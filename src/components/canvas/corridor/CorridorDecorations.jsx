@@ -404,7 +404,7 @@ const CorridorDecorations = ({ segmentLength, zOffset, corridorWidth = 4, corrid
             height: 2.5 / 1.785,
             y: 0.25,
             id: 'frame-3',
-            image: '/xinshu/observatory-painting.webp',
+            image: '/xinshu/borrowed-moon.webp',
             imageWidth: 2.12,
             imageHeight: 1.18,
             offsetFromWall: 0.1
