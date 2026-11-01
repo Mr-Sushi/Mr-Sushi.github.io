@@ -1,0 +1,838 @@
+{
+  "projects": [
+    {
+      "id": "project-0",
+      "title": "From Observer to Creator: Unpacking the Tradeoff between Conceptual Understanding and Transfer in VR Cultural Heritage Learning",
+      "platform": "research",
+      "description": "Yidan Zhu, Xin Shu, Lei Shi\n\nInternational Journal of Human–Computer Interaction, 2026",
+      "url": "https://www.tandfonline.com/doi/full/10.1080/10447318.2026.2706892",
+      "date": "2026",
+      "frontTexture": "/xinshu/project-0.webp",
+      "paintedFrontTexture": "/xinshu/project-0.webp",
+      "thumbnail": "/xinshu/project-0.webp"
+    },
+    {
+      "id": "project-1",
+      "title": "Casting the Shadow for Understanding \"Reasoning Ghosts\"",
+      "platform": "research",
+      "description": "Xixiang Nie, Xin Shu, Matthew Wood\n\nIn Proceedings of the 2026 ACM Conference on Creativity & Cognition, pp. 1641–1647",
+      "url": "https://dl.acm.org/doi/full/10.1145/3803784.3816871",
+      "date": "2026",
+      "frontTexture": "/xinshu/project-1.webp",
+      "paintedFrontTexture": "/xinshu/project-1.webp",
+      "thumbnail": "/xinshu/project-1.webp"
+    },
+    {
+      "id": "project-2",
+      "title": "ShadowAI: Fostering Children's AI Literacy and Critical Understanding of AI Reasoning",
+      "platform": "research",
+      "description": "Xixiang Nie, Maureen Mwadime, Xin Shu, Matthew Wood\n\nIn Proceedings of the 2026 ACM Conference on Creativity & Cognition, pp. 1470–1477",
+      "url": "https://dl.acm.org/doi/full/10.1145/3803784.3816815",
+      "date": "2026",
+      "frontTexture": "/xinshu/project-2.webp",
+      "paintedFrontTexture": "/xinshu/project-2.webp",
+      "thumbnail": "/xinshu/project-2.webp"
+    },
+    {
+      "id": "project-3",
+      "title": "FretFlow: Adaptive Haptics for Rhythm and Articulation in Guitar Learning",
+      "platform": "research",
+      "description": "Xin Shu, Lei Shi, Yiran Lin, Yan Zeng, Tingting Luo, Justice Ou, Mohamad Eid, Xinhuan Shu\n\nIn Proceedings of ACM Conference on Human Factors in Computing Systems, 2026.",
+      "url": "https://dl.acm.org/doi/10.1145/3772318.3791540",
+      "date": "2026",
+      "frontTexture": "/xinshu/project-3.webp",
+      "paintedFrontTexture": "/xinshu/project-3.webp",
+      "thumbnail": "/xinshu/project-3.webp"
+    },
+    {
+      "id": "project-4",
+      "title": "Quiz Traveller: A Crowdsourced Educational Game on Chat-Based Interactive Live-Streaming Platforms\n            🏆 Best Paper Award",
+      "platform": "research",
+      "description": "Yunfei Wang, Lei Shi, Xin Shu, Marci Chi Ma, Wilk Oliveira, Ahmed Kharrufa\n\nProceedings of the 10th International GamiFIN Conference, 2026",
+      "url": "https://dl.acm.org/doi/10.1145/3789624.3789631",
+      "date": "2026",
+      "frontTexture": "/xinshu/project-4.webp",
+      "paintedFrontTexture": "/xinshu/project-4.webp",
+      "thumbnail": "/xinshu/project-4.webp"
+    },
+    {
+      "id": "project-5",
+      "title": "Somaditation: A Multisensory VR Meditation Experience with a Wearable Glove",
+      "platform": "research",
+      "description": "Xixiang Nie, Xin Shu\n\nIn Proceedings of the ACM Conference on Tangible, Embedded, and Embodied Interaction, 2026",
+      "url": "https://dl.acm.org/doi/10.1145/3731459.3786212",
+      "date": "2026",
+      "frontTexture": "/xinshu/project-5.webp",
+      "paintedFrontTexture": "/xinshu/project-5.webp",
+      "thumbnail": "/xinshu/project-5.webp"
+    },
+    {
+      "id": "project-6",
+      "title": "Seeking Inspiration through Human‑LLM Interaction",
+      "platform": "research",
+      "description": "Xinrui Lin, Heyan Huang, Kaihuang Huang, Xin Shu, John Vines\n\nProceedings of the 2025 CHI Conference on Human Factors in Computing Systems",
+      "url": "https://doi.org/10.1145/3706598.3713259",
+      "date": "2025",
+      "frontTexture": "/xinshu/project-6.webp",
+      "paintedFrontTexture": "/xinshu/project-6.webp",
+      "thumbnail": "/xinshu/project-6.webp"
+    },
+    {
+      "id": "project-7",
+      "title": "FretMate: AI‑Powered Guitar Learning Assistant",
+      "platform": "research",
+      "description": "Xin Shu, Lei Shi, Jiacheng Cheng, Lingling Ouyang, Mengdi Chu, Xinhuan Shu\n\nProceedings of the 30th International Conference on Intelligent User Interfaces, 2025",
+      "url": "https://doi.org/10.1145/3708359.3712080",
+      "date": "2025",
+      "frontTexture": "/xinshu/project-7.webp",
+      "paintedFrontTexture": "/xinshu/project-7.webp",
+      "thumbnail": "/xinshu/project-7.webp"
+    },
+    {
+      "id": "project-8",
+      "title": "GlobalUP: Leveraging Social Media to Provide Social Support for Chinese Cultural Groups in Unfamiliar\n            Environments",
+      "platform": "research",
+      "description": "Haowei Xu, Xin Shu\n\nProceedings of the 2025 International Conference on Human-Computer Interaction",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-031-93539-8_26",
+      "date": "2025",
+      "frontTexture": "/xinshu/project-8.webp",
+      "paintedFrontTexture": "/xinshu/project-8.webp",
+      "thumbnail": "/xinshu/project-8.webp"
+    },
+    {
+      "id": "project-9",
+      "title": "Work with AI and Work for AI: Autonomous Vehicle Safety Drivers’ Lived Experiences",
+      "platform": "research",
+      "description": "Mengdi Chu, Keyu Zong, Xin Shu, Jiangtao Gong, Zhicong Lu, Kaimin Guo, Xinyi Dai,\n            Guyue Zhou\n\nProceedings of the 2023 CHI Conference on Human Factors in Computing Systems",
+      "url": "https://doi.org/10.1145/3544548.3581564",
+      "date": "2023",
+      "frontTexture": "/xinshu/project-9.webp",
+      "paintedFrontTexture": "/xinshu/project-9.webp",
+      "thumbnail": "/xinshu/project-9.webp"
+    },
+    {
+      "id": "project-10",
+      "title": "Contactless Physiological Sensing in Smart Home Environments",
+      "platform": "research",
+      "description": "Jiangtao Gong, Mengdi Chu, Jin Li, Kaimin Guo, Keyu Zong, Xin Shu, Guyue Zhou,\n            Zaiqing Nie\n\nIndustrial Design, 2022, Issue 16",
+      "url": "https://chn.oversea.cnki.net/kcms/detail/detail.aspx?filename=BZGC202216002&dbcode=CJFQ&dbname=CJFDLAST2022&uniplatform=NZKPT",
+      "date": "2022",
+      "frontTexture": "/xinshu/project-10.webp",
+      "paintedFrontTexture": "/xinshu/project-10.webp",
+      "thumbnail": "/xinshu/project-10.webp"
+    }
+  ],
+  "moments": [
+    {
+      "id": "moment-1",
+      "title": "Moments / 01",
+      "front": "/xinshu/moment-1.webp",
+      "painted": "/xinshu/moment-1.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-2",
+      "title": "Moments / 02",
+      "front": "/xinshu/moment-2.webp",
+      "painted": "/xinshu/moment-2.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-3",
+      "title": "Moments / 03",
+      "front": "/xinshu/moment-3.webp",
+      "painted": "/xinshu/moment-3.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-4",
+      "title": "Moments / 04",
+      "front": "/xinshu/moment-4.webp",
+      "painted": "/xinshu/moment-4.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-5",
+      "title": "Moments / 05",
+      "front": "/xinshu/moment-5.webp",
+      "painted": "/xinshu/moment-5.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-6",
+      "title": "Moments / 06",
+      "front": "/xinshu/moment-6.webp",
+      "painted": "/xinshu/moment-6.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-7",
+      "title": "Moments / 07",
+      "front": "/xinshu/moment-7.webp",
+      "painted": "/xinshu/moment-7.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-8",
+      "title": "Moments / 08",
+      "front": "/xinshu/moment-8.webp",
+      "painted": "/xinshu/moment-8.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-9",
+      "title": "Moments / 09",
+      "front": "/xinshu/moment-9.webp",
+      "painted": "/xinshu/moment-9.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-10",
+      "title": "Moments / 10",
+      "front": "/xinshu/moment-10.webp",
+      "painted": "/xinshu/moment-10.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-11",
+      "title": "Moments / 11",
+      "front": "/xinshu/moment-11.webp",
+      "painted": "/xinshu/moment-11.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-12",
+      "title": "Moments / 12",
+      "front": "/xinshu/moment-12.webp",
+      "painted": "/xinshu/moment-12.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-13",
+      "title": "Moments / 13",
+      "front": "/xinshu/moment-13.webp",
+      "painted": "/xinshu/moment-13.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-14",
+      "title": "Moments / 14",
+      "front": "/xinshu/moment-14.webp",
+      "painted": "/xinshu/moment-14.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-15",
+      "title": "Moments / 15",
+      "front": "/xinshu/moment-15.webp",
+      "painted": "/xinshu/moment-15.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-16",
+      "title": "Moments / 16",
+      "front": "/xinshu/moment-16.webp",
+      "painted": "/xinshu/moment-16.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-17",
+      "title": "Moments / 17",
+      "front": "/xinshu/moment-17.webp",
+      "painted": "/xinshu/moment-17.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-18",
+      "title": "Moments / 18",
+      "front": "/xinshu/moment-18.webp",
+      "painted": "/xinshu/moment-18.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-19",
+      "title": "Moments / 19",
+      "front": "/xinshu/moment-19.webp",
+      "painted": "/xinshu/moment-19.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-20",
+      "title": "Moments / 20",
+      "front": "/xinshu/moment-20.webp",
+      "painted": "/xinshu/moment-20.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-21",
+      "title": "Moments / 21",
+      "front": "/xinshu/moment-21.webp",
+      "painted": "/xinshu/moment-21.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-22",
+      "title": "Moments / 22",
+      "front": "/xinshu/moment-22.webp",
+      "painted": "/xinshu/moment-22.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-23",
+      "title": "Moments / 23",
+      "front": "/xinshu/moment-23.webp",
+      "painted": "/xinshu/moment-23.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-24",
+      "title": "Moments / 24",
+      "front": "/xinshu/moment-24.webp",
+      "painted": "/xinshu/moment-24.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-25",
+      "title": "Moments / 25",
+      "front": "/xinshu/moment-25.webp",
+      "painted": "/xinshu/moment-25.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-26",
+      "title": "Moments / 26",
+      "front": "/xinshu/moment-26.webp",
+      "painted": "/xinshu/moment-26.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-27",
+      "title": "Moments / 27",
+      "front": "/xinshu/moment-27.webp",
+      "painted": "/xinshu/moment-27.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-28",
+      "title": "Moments / 28",
+      "front": "/xinshu/moment-28.webp",
+      "painted": "/xinshu/moment-28.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-29",
+      "title": "Moments / 29",
+      "front": "/xinshu/moment-29.webp",
+      "painted": "/xinshu/moment-29.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-30",
+      "title": "Moments / 30",
+      "front": "/xinshu/moment-30.webp",
+      "painted": "/xinshu/moment-30.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-31",
+      "title": "Moments / 31",
+      "front": "/xinshu/moment-31.webp",
+      "painted": "/xinshu/moment-31.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-32",
+      "title": "Moments / 32",
+      "front": "/xinshu/moment-32.webp",
+      "painted": "/xinshu/moment-32.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-33",
+      "title": "Moments / 33",
+      "front": "/xinshu/moment-33.webp",
+      "painted": "/xinshu/moment-33.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-34",
+      "title": "Moments / 34",
+      "front": "/xinshu/moment-34.webp",
+      "painted": "/xinshu/moment-34.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-35",
+      "title": "Moments / 35",
+      "front": "/xinshu/moment-35.webp",
+      "painted": "/xinshu/moment-35.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-36",
+      "title": "Moments / 36",
+      "front": "/xinshu/moment-36.webp",
+      "painted": "/xinshu/moment-36.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-37",
+      "title": "Moments / 37",
+      "front": "/xinshu/moment-37.webp",
+      "painted": "/xinshu/moment-37.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-38",
+      "title": "Moments / 38",
+      "front": "/xinshu/moment-38.webp",
+      "painted": "/xinshu/moment-38.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-39",
+      "title": "Moments / 39",
+      "front": "/xinshu/moment-39.webp",
+      "painted": "/xinshu/moment-39.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-40",
+      "title": "Moments / 40",
+      "front": "/xinshu/moment-40.webp",
+      "painted": "/xinshu/moment-40.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-41",
+      "title": "Moments / 41",
+      "front": "/xinshu/moment-41.webp",
+      "painted": "/xinshu/moment-41.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-42",
+      "title": "Moments / 42",
+      "front": "/xinshu/moment-42.webp",
+      "painted": "/xinshu/moment-42.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-43",
+      "title": "Moments / 43",
+      "front": "/xinshu/moment-43.webp",
+      "painted": "/xinshu/moment-43.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-44",
+      "title": "Moments / 44",
+      "front": "/xinshu/moment-44.webp",
+      "painted": "/xinshu/moment-44.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-45",
+      "title": "Moments / 45",
+      "front": "/xinshu/moment-45.webp",
+      "painted": "/xinshu/moment-45.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-46",
+      "title": "Moments / 46",
+      "front": "/xinshu/moment-46.webp",
+      "painted": "/xinshu/moment-46.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-47",
+      "title": "Moments / 47",
+      "front": "/xinshu/moment-47.webp",
+      "painted": "/xinshu/moment-47.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-48",
+      "title": "Moments / 48",
+      "front": "/xinshu/moment-48.webp",
+      "painted": "/xinshu/moment-48.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-49",
+      "title": "Moments / 49",
+      "front": "/xinshu/moment-49.webp",
+      "painted": "/xinshu/moment-49.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-50",
+      "title": "Moments / 50",
+      "front": "/xinshu/moment-50.webp",
+      "painted": "/xinshu/moment-50.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-51",
+      "title": "Moments / 51",
+      "front": "/xinshu/moment-51.webp",
+      "painted": "/xinshu/moment-51.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-52",
+      "title": "Moments / 52",
+      "front": "/xinshu/moment-52.webp",
+      "painted": "/xinshu/moment-52.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-53",
+      "title": "Moments / 53",
+      "front": "/xinshu/moment-53.webp",
+      "painted": "/xinshu/moment-53.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-54",
+      "title": "Moments / 54",
+      "front": "/xinshu/moment-54.webp",
+      "painted": "/xinshu/moment-54.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-55",
+      "title": "Moments / 55",
+      "front": "/xinshu/moment-55.webp",
+      "painted": "/xinshu/moment-55.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-56",
+      "title": "Moments / 56",
+      "front": "/xinshu/moment-56.webp",
+      "painted": "/xinshu/moment-56.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-57",
+      "title": "Moments / 57",
+      "front": "/xinshu/moment-57.webp",
+      "painted": "/xinshu/moment-57.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-58",
+      "title": "Moments / 58",
+      "front": "/xinshu/moment-58.webp",
+      "painted": "/xinshu/moment-58.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-59",
+      "title": "Moments / 59",
+      "front": "/xinshu/moment-59.webp",
+      "painted": "/xinshu/moment-59.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-60",
+      "title": "Moments / 60",
+      "front": "/xinshu/moment-60.webp",
+      "painted": "/xinshu/moment-60.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-61",
+      "title": "Moments / 61",
+      "front": "/xinshu/moment-61.webp",
+      "painted": "/xinshu/moment-61.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-62",
+      "title": "Moments / 62",
+      "front": "/xinshu/moment-62.webp",
+      "painted": "/xinshu/moment-62.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-63",
+      "title": "Moments / 63",
+      "front": "/xinshu/moment-63.webp",
+      "painted": "/xinshu/moment-63.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-64",
+      "title": "Moments / 64",
+      "front": "/xinshu/moment-64.webp",
+      "painted": "/xinshu/moment-64.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-65",
+      "title": "Moments / 65",
+      "front": "/xinshu/moment-65.webp",
+      "painted": "/xinshu/moment-65.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-66",
+      "title": "Moments / 66",
+      "front": "/xinshu/moment-66.webp",
+      "painted": "/xinshu/moment-66.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-67",
+      "title": "Moments / 67",
+      "front": "/xinshu/moment-67.webp",
+      "painted": "/xinshu/moment-67.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-68",
+      "title": "Moments / 68",
+      "front": "/xinshu/moment-68.webp",
+      "painted": "/xinshu/moment-68.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-69",
+      "title": "Moments / 69",
+      "front": "/xinshu/moment-69.webp",
+      "painted": "/xinshu/moment-69.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-70",
+      "title": "Moments / 70",
+      "front": "/xinshu/moment-70.webp",
+      "painted": "/xinshu/moment-70.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-71",
+      "title": "Moments / 71",
+      "front": "/xinshu/moment-71.webp",
+      "painted": "/xinshu/moment-71.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-72",
+      "title": "Moments / 72",
+      "front": "/xinshu/moment-72.webp",
+      "painted": "/xinshu/moment-72.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-73",
+      "title": "Moments / 73",
+      "front": "/xinshu/moment-73.webp",
+      "painted": "/xinshu/moment-73.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-74",
+      "title": "Moments / 74",
+      "front": "/xinshu/moment-74.webp",
+      "painted": "/xinshu/moment-74.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-75",
+      "title": "Moments / 75",
+      "front": "/xinshu/moment-75.webp",
+      "painted": "/xinshu/moment-75.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-76",
+      "title": "Moments / 76",
+      "front": "/xinshu/moment-76.webp",
+      "painted": "/xinshu/moment-76.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-77",
+      "title": "Moments / 77",
+      "front": "/xinshu/moment-77.webp",
+      "painted": "/xinshu/moment-77.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-78",
+      "title": "Moments / 78",
+      "front": "/xinshu/moment-78.webp",
+      "painted": "/xinshu/moment-78.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    },
+    {
+      "id": "moment-79",
+      "title": "Moments / 79",
+      "front": "/xinshu/moment-79.webp",
+      "painted": "/xinshu/moment-79.webp",
+      "url": "https://xinshu.info/insights.html",
+      "description": "A moment photographed by Xin Shu. From the Moments collection.",
+      "techStack": []
+    }
+  ]
+}

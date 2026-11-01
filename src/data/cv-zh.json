@@ -1,0 +1,393 @@
+{
+  "sections": [
+    {
+      "id": "education",
+      "title": "教育背景",
+      "entries": [
+        {
+          "title": "博士候选人（人机交互）",
+          "meta": "Newcastle University, UK",
+          "year": "2023.10 – Present",
+          "details": []
+        },
+        {
+          "title": "访问博士（人机交互）",
+          "meta": "<a href=\"https://www.next.zju.edu.cn/\">NextLab</a>, Zhejiang University, China",
+          "year": "2026.06 – Present",
+          "details": []
+        },
+        {
+          "title": "访问博士（人机交互）",
+          "meta": "Newyork University(NYUAD), UAE",
+          "year": "2025.01 – 2025.06",
+          "details": []
+        },
+        {
+          "title": "设计信息学理学硕士",
+          "meta": "University of Edinburgh, UK",
+          "year": "2022.09 – 2023.09",
+          "details": []
+        },
+        {
+          "title": "信息系统工程学士",
+          "meta": "Dalarna University, Sweden",
+          "year": "2020.09 – 2021.06",
+          "details": []
+        },
+        {
+          "title": "交换生（计算机科学）",
+          "meta": "University of Oulu, Finland",
+          "year": "2019.09 – 2020.06",
+          "details": []
+        },
+        {
+          "title": "软件工程学学士",
+          "meta": "Jiangxi University of Finance and Economics(JUFE), China",
+          "year": "2017.09 – 2021.06",
+          "details": []
+        }
+      ]
+    },
+    {
+      "id": "projects",
+      "title": "代表性项目与论文",
+      "entries": [
+        {
+          "title": "\n<a href=\"https://www.tandfonline.com/doi/full/10.1080/10447318.2026.2706892\">\n              From Observer to Creator: Unpacking the Tradeoff between Conceptual Understanding and Transfer in VR Cultural Heritage Learning\n            </a>\n",
+          "meta": "International Journal of Human–Computer Interaction (IJHCI 2026)",
+          "details": []
+        },
+        {
+          "title": "\n<a href=\"https://dl.acm.org/doi/full/10.1145/3803784.3816871\">\n              Casting the Shadow for Understanding \"Reasoning Ghosts\"\n            </a>\n",
+          "meta": "Proceedings of the 2026 ACM Conference on Creativity &amp; Cognition (C&amp;C 2026), pp. 1641–1647",
+          "details": []
+        },
+        {
+          "title": "\n<a href=\"https://dl.acm.org/doi/full/10.1145/3803784.3816815\">\n              ShadowAI: Fostering Children's AI Literacy and Critical Understanding of AI Reasoning\n            </a>\n",
+          "meta": "Proceedings of the 2026 ACM Conference on Creativity &amp; Cognition (C&amp;C 2026), pp. 1470–1477",
+          "details": []
+        },
+        {
+          "title": "FretFlow: Adaptive Haptics for Rhythm and Articulation in Guitar Learning",
+          "meta": "ACM CHI 2026 国际会议论文集",
+          "details": []
+        },
+        {
+          "title": "\n<a href=\"https://dl.acm.org/doi/10.1145/3789624.3789631\">Quiz Traveller: A Crowdsourced Educational Game on Chat-Based Interactive Live-Streaming Platforms</a>\n<strong>🏆 最佳论文奖</strong>\n",
+          "meta": "第10届 GamiFIN 国际会议论文集，2026",
+          "details": []
+        },
+        {
+          "title": "\n<a href=\"https://dl.acm.org/doi/10.1145/3731459.3786212\">Somaditation: A Multisensory VR Meditation Experience with a Wearable Glove</a>\n",
+          "meta": "ACM TEI 2026 国际会议论文集",
+          "details": []
+        },
+        {
+          "title": "\n<a href=\"https://link.springer.com/chapter/10.1007/978-3-031-93539-8_26\">GlobalUP: Leveraging Social Media to Provide Social Support for Chinese Cultural Groups in Unfamiliar Environments</a>\n",
+          "meta": "社会计算与社交媒体（HCII 2025）",
+          "details": []
+        },
+        {
+          "title": "\n<a href=\"https://dl.acm.org/doi/10.1145/3708359.3712080\">FretMate: ChatGPT-Powered Adaptive Guitar Learning Assistant</a>\n",
+          "meta": "ACM IUI 2025 国际会议论文集",
+          "details": []
+        },
+        {
+          "title": "\n<a href=\"https://dl.acm.org/doi/10.1145/3706598.3713259\">Human–LLM Interaction for Creative Inspiration</a>\n",
+          "meta": "ACM CHI 2025 国际会议论文集",
+          "details": []
+        },
+        {
+          "title": "\n<a href=\"https://dl.acm.org/doi/10.1145/3544548.3581564\">Work with AI and Work for AI: Autonomous Vehicle Safety Drivers' Lived Experiences</a>\n",
+          "meta": "ACM CHI 2023 国际会议论文集",
+          "details": []
+        },
+        {
+          "title": "\n<a href=\"https://chn.oversea.cnki.net/kcms/detail/detail.aspx?filename=BZGC202216002&amp;dbcode=CJFQ&amp;dbname=CJFDLAST2022&amp;uniplatform=NZKPT\">智能家居环境下的非接触式生理感知</a>\n",
+          "meta": "工业工程与管理（2022）",
+          "details": []
+        }
+      ]
+    },
+    {
+      "id": "internship",
+      "title": "实习经历",
+      "entries": [
+        {
+          "title": "产品经理",
+          "meta": "Shopee，北京",
+          "year": "2022.01 – 2022.05",
+          "details": [
+            "优化激励与增长体系：通过引入任务发布、导师任务以及视频观看分阶段反馈，将 Shopee 视频平台的 DAU 从 170 万提升至 210 万。",
+            "提升用户留存：设计并上线基于激励机制的视频互动功能，使人均观看时长增加 1.2 分钟。",
+            "增强用户参与度：策划并落地节日/活动主题页，带来额外 3.2 万日活用户，并通过新增快捷入口和绿色频道将视频转化率提升 5%。"
+          ]
+        },
+        {
+          "title": "产品经理",
+          "meta": "快手(快影)，深圳",
+          "year": "2021 – 2022",
+          "details": [
+            "用户体验与功能优化：主导短视频检索、流媒体播放与内容展示的优化，素材库浏览量提升23%；设计创新编辑工具，封面浏览量提升13%，分享量提升17%。",
+            "自动化与AI集成：与图像识别团队协作，实现视频帧分析与内容筛选自动化，提升交互准确性和效率。",
+            "产品指标与影响：搭建反馈机制，将日活用户留存率从30%提升到35%，优化视频/图片管理，支持350万日活用户的运营需求。",
+            "专利成果：作为主要发明人，获得快影App封面模板智能推荐专利（专利号：2021KT2414）。"
+          ]
+        },
+        {
+          "title": "AI 产品经理",
+          "meta": "滴滴出行，北京",
+          "year": "2021 – 2022",
+          "details": [
+            "SaaS平台开发：参与外呼自动化产品研发，撰写核心平台功能（账户管理、企业认证、企业管理、智能黑名单）PRD，推动UI评审和功能迭代。",
+            "管理平台优化：编写任务优化与企业审核流程相关PRD，简化内部流程，提升行政效率。",
+            "竞品调研与分析：完成百度云、阿里云等竞品分析报告，提炼账户资产中心关键指标，为产品定位提供支撑。",
+            "数据驱动项目交付：主导语音识别模型（n=1000）交互准确性评估，输出数据驱动报告，提升产品透明度和可靠性。"
+          ]
+        },
+        {
+          "title": "产品经理",
+          "meta": "网易有道（超级词典），北京",
+          "year": "2020 – 2021",
+          "details": [
+            "产品规划与战略：负责 AI 驱动教育工具超过 70% 功能模块的规划与管理，撰写并交付 12+ PRD，涵盖听力、阅读、写作批改、全局音频与家长控制等核心功能。",
+            "用户研究与市场洞察：主导大规模用户研究（含 3000 份问卷、105 人量化实验、20 次深度访谈），结合竞品分析（如科大讯飞、小爱、微信读书），形成用户画像、市场细分与可落地的游戏化方案。",
+            "功能开发与优化：撰写 10 份 PRD（5 个新功能、5 个优化），显著改善牛津词典集成及整体用户界面体验。"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skills",
+      "title": "技能",
+      "entries": [
+        {
+          "title": "编程",
+          "meta": "Python、Java、JavaScript、C++、Unity、SQL",
+          "details": []
+        },
+        {
+          "title": "工具",
+          "meta": "VS Code、Git、Jupyter Notebook、Confluence、Jira、Xmind、Arduino、 EEG devices",
+          "details": []
+        },
+        {
+          "title": "原型设计",
+          "meta": "Figma、Axure",
+          "details": []
+        },
+        {
+          "title": "设计",
+          "meta": "Photoshop、Lightroom",
+          "details": []
+        },
+        {
+          "title": "语言",
+          "meta": "中文（母语）；英语（TOEFL 109）",
+          "details": []
+        }
+      ]
+    },
+    {
+      "id": "campus",
+      "title": "校园活动",
+      "entries": [
+        {
+          "title": "纽卡斯尔大学校园大使",
+          "meta": "Newcastle University",
+          "year": "2025.11 – Present",
+          "details": []
+        },
+        {
+          "title": "宣传部部长",
+          "meta": "纽卡斯尔大学学生会",
+          "year": "2023 – 2024",
+          "details": []
+        },
+        {
+          "title": "媒体负责人 – 东北五校春节联欢晚会（1000 人）",
+          "meta": "纽卡斯尔、杜伦及三所合作大学",
+          "year": "2024",
+          "details": []
+        },
+        {
+          "title": "春节联欢晚会主持人",
+          "meta": "芬兰奥卢大学",
+          "year": "2019 – 2020",
+          "details": []
+        },
+        {
+          "title": "摄影学会外联部副部长",
+          "meta": "江西财经大学",
+          "year": "2018 – 2019",
+          "details": []
+        },
+        {
+          "title": "软件工程班长",
+          "meta": "江西财经大学",
+          "year": "2018 – 2019",
+          "details": []
+        },
+        {
+          "title": "国旗队宣传部部长",
+          "meta": "江西财经大学",
+          "year": "2018 – 2019",
+          "details": []
+        },
+        {
+          "title": "武术协会宣传部副部长",
+          "meta": "江西财经大学",
+          "year": "2018 – 2019",
+          "details": []
+        }
+      ]
+    },
+    {
+      "id": "awards",
+      "title": "奖项与荣誉",
+      "entries": [
+        {
+          "title": "入选 IEEE 世界触觉大会 2025 学生创新挑战赛",
+          "year": "07/2025",
+          "details": []
+        },
+        {
+          "title": "优秀毕业生奖",
+          "year": "06/2021",
+          "details": []
+        },
+        {
+          "title": "海外学生一等奖学金",
+          "year": "05/2020",
+          "details": []
+        },
+        {
+          "title": "达拉那大学最高奖学金",
+          "year": "04/2020",
+          "details": []
+        },
+        {
+          "title": "江西省大学生数学建模竞赛三等奖",
+          "year": "12/2019",
+          "details": []
+        },
+        {
+          "title": "“互联网+”大学生创新创业竞赛三等奖",
+          "year": "09/2019",
+          "details": []
+        },
+        {
+          "title": "校园“互联网+”创新大赛三等奖",
+          "year": "09/2019",
+          "details": []
+        },
+        {
+          "title": "用友软件奖学金",
+          "year": "06/2019",
+          "details": []
+        },
+        {
+          "title": "学习优秀奖学金",
+          "year": "06/2019",
+          "details": []
+        },
+        {
+          "title": "科技之星企业奖学金",
+          "year": "05/2019",
+          "details": []
+        },
+        {
+          "title": "全国大学生数学建模竞赛二等奖",
+          "year": "05/2019",
+          "details": []
+        },
+        {
+          "title": "江西省大学生程序设计竞赛一等奖",
+          "year": "05/2019",
+          "details": []
+        },
+        {
+          "title": "校级优秀学生",
+          "year": "12/2018",
+          "details": []
+        },
+        {
+          "title": "思辨杯最佳辩手",
+          "year": "12/2018",
+          "details": []
+        },
+        {
+          "title": "江西省三级心理咨询师",
+          "year": "09/2018",
+          "details": []
+        },
+        {
+          "title": "江西财经大学外语学院一等奖学金",
+          "year": "06/2018",
+          "details": []
+        },
+        {
+          "title": "学习优秀奖学金",
+          "year": "06/2018",
+          "details": []
+        },
+        {
+          "title": "2018 江西省大学生计算机竞赛二等奖",
+          "year": "05/2018",
+          "details": []
+        },
+        {
+          "title": "校级“ERP沙盘模拟操作”竞赛二等奖",
+          "year": "05/2018",
+          "details": []
+        },
+        {
+          "title": "江西财经大学十大人才",
+          "year": "05/2018",
+          "details": []
+        }
+      ]
+    },
+    {
+      "id": "teaching",
+      "title": "教学与服务",
+      "entries": [
+        {
+          "title": "论文审稿人",
+          "meta": "CHI 2027、NIME 2026、EDM 2025、IUI 2025",
+          "details": []
+        },
+        {
+          "title": "助教",
+          "meta": "\n<a href=\"https://www.ncl.ac.uk/undergraduate/degrees/module/?code=CSC1034&amp;year=2026\">2027 Programming Portfolio 1（CSC1034）</a>\n<span>，纽卡斯尔大学</span>\n",
+          "details": []
+        },
+        {
+          "title": "助教",
+          "meta": "\n<a href=\"https://www.ncl.ac.uk/undergraduate/degrees/module/?code=CSC1032&amp;year=2026\">2027 Computer Systems Design and Architectures（CSC1032）</a>\n<span>，纽卡斯尔大学</span>\n",
+          "details": []
+        },
+        {
+          "title": "助教",
+          "meta": "\n<a href=\"https://www.ncl.ac.uk/undergraduate/degrees/module/?code=CSC3432&amp;year=2026\">2027 Biomedical Data Analytics and AI（CSC3432）</a>\n<span>，纽卡斯尔大学</span>\n",
+          "details": []
+        },
+        {
+          "title": "助教",
+          "meta": "\n<a href=\"https://www.ncl.ac.uk/module-catalogue/module.php?code=CSC8611\">2026 Human-Artificial Intelligence (AI) Interaction &amp; Futures (CSC8611)</a>\n<span>，纽卡斯尔大学</span>\n",
+          "details": []
+        },
+        {
+          "title": "ELTS: Evidencing Learning and Teaching Skills (AFHEA route)",
+          "meta": "Newcastle University",
+          "details": []
+        }
+      ]
+    }
+  ],
+  "contacts": [
+    "纽卡斯尔大学计算机学院",
+    "x.shu6@newcastle.ac.uk",
+    "+44 7536 205 983"
+  ]
+}
