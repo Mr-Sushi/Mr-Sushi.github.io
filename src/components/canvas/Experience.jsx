@@ -29,7 +29,11 @@ const Experience = ({ isLoaded, onSceneReady, performanceTier }) => {
     // Use SceneContext for room state
     const { hasEntered, markEntered, enterRoom, isTeleporting, isInRoom, pendingDoorClick } = useScene();
 
-    const { camera } = useThree();
+    const { camera, size } = useThree();
+    useEffect(() => {
+      camera.fov = !hasEntered && size.width < size.height ? 92 : 60;
+      camera.updateProjectionMatrix();
+    }, [camera, hasEntered, size.width, size.height]);
 
     // Camera control - both scroll and parallax only work after entering
     // Disable during teleporting to prevent scroll interference

@@ -6,45 +6,52 @@
       "entries": [
         {
           "title": "Ph.D in Human Computer Interaction",
-          "meta": "Newcastle University, UK",
+          "meta": "<a href=\"https://openlab.ncl.ac.uk/\">OpenLab</a>, Newcastle University, UK<br/>Supervisors: <a href=\"http://shilei.me\">Lei Shi</a> · <a href=\"https://shuxinhuan.github.io/\">Xinhuan Shu</a>",
           "year": "2023.10 – Present",
-          "details": []
+          "details": [],
+          "educationGroup": "degree"
         },
         {
           "title": "Visiting Ph.D (Human Computer Interaction)",
-          "meta": "<a href=\"https://www.next.zju.edu.cn/\">NextLab</a>, Zhejiang University, China",
-          "year": "2026.06 – Present",
-          "details": []
+          "meta": "<a href=\"https://www.next.zju.edu.cn/\">NextLab</a>, Zhejiang University, China<br/>Supervisor: <a href=\"https://person.zju.edu.cn/en/zhangkejun\">Kejun Zhang</a>",
+          "year": "2026.06 – 2026.10",
+          "details": [],
+          "educationGroup": "visit"
         },
         {
           "title": "Visiting Ph.D (Human Computer Interaction)",
-          "meta": "Newyork University(NYUAD), UAE",
+          "meta": "<a href=\"https://aimlab-haptics.com/\">AIM Lab</a>, New York University Abu Dhabi (NYUAD), UAE<br/>Supervisor: <a href=\"https://nyuad.nyu.edu/en/academics/divisions/engineering/faculty/mohamad-eid.html\">Mohamad Eid</a>",
           "year": "2025.01 – 2025.06",
-          "details": []
+          "details": [],
+          "educationGroup": "visit"
         },
         {
           "title": "MSc Design Informatics",
           "meta": "University of Edinburgh, UK",
           "year": "2022.09 – 2023.09",
-          "details": []
+          "details": [],
+          "educationGroup": "degree"
         },
         {
           "title": "BEng Information Systems",
           "meta": "Dalarna University, Sweden",
           "year": "2020.09 – 2021.06",
-          "details": []
+          "details": [],
+          "educationGroup": "degree"
         },
         {
           "title": "Exchange Student (Computer Science)",
           "meta": "University of Oulu, Finland",
           "year": "2019.09 – 2020.06",
-          "details": []
+          "details": [],
+          "educationGroup": "visit"
         },
         {
           "title": "BEng Software Engineering",
           "meta": "Jiangxi University of Finance and Economics(JUFE), China",
           "year": "2017.09 – 2021.06",
-          "details": []
+          "details": [],
+          "educationGroup": "degree"
         }
       ]
     },

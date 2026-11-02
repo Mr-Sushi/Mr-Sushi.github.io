@@ -430,7 +430,7 @@ const ContactRoom = ({ showRoom, onReady, isExiting, isWarmup }) => {
                 paintOnBeforeCompile={onBeforeCompile}
                 paintUniforms={uniformsData}
             />
-            <SocialBarrel position={isMobile ? [0, 1.2, -13] : [0, 1.2, -12]} rotation={[0,0,0]} texturePath="/textures/contact/beczka.webp" label={"GOOGLE\nSCHOLAR"} onClick={() => window.open('https://scholar.google.com/citations?user=M9Lst2EAAAAJ', '_blank', 'noopener,noreferrer')} paintOnBeforeCompile={onBeforeCompile} paintUniforms={uniformsData} />
+            <SocialBarrel position={isMobile ? [1.2, 0.5, -10] : [3, 0.5, -10]} rotation={[0,0,0]} texturePath="/textures/contact/beczka.webp" label={"GOOGLE\nSCHOLAR"} onClick={() => window.open('https://scholar.google.com/citations?user=M9Lst2EAAAAJ', '_blank', 'noopener,noreferrer')} paintOnBeforeCompile={onBeforeCompile} paintUniforms={uniformsData} />
             {/* MAIL (Triggers animation) */}
             <SocialBarrel
                 position={isMobile ? [0, -0.7, -6] : [0, -0.7, -7]}

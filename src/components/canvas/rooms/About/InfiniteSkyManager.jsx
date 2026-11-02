@@ -149,13 +149,13 @@ const InfiniteSkyManager = ({ scrollProgressRef }) => {
  */
 const sections = {
  intro: ['XIN SHU', 'HCI researcher · music · creative technology', 'PhD, Newcastle University · 2023–present\nOpenLab, School of Computing\nAI · multimodal interaction · learning'],
- awards: ['EXPERIENCE', 'Research & product design', 'Visiting PhD · Zhejiang University · 2026–present\nVisiting PhD · NYU Abu Dhabi · 2025\nProduct roles · Shopee / Kuaishou / DiDi / NetEase'],
+ awards: ['EXPERIENCE', 'Research & product design', 'Visiting PhD · Zhejiang University · Jun–Oct 2026\nVisiting PhD · NYU Abu Dhabi · 2025\nProduct roles · Shopee / Kuaishou / DiDi / NetEase'],
  journey: ['A JOURNEY OF LEARNING', 'China → Finland → Sweden → United Kingdom', 'MSc Design Informatics · Edinburgh · 2022–2023\nBEng Information Systems · Dalarna · 2020–2021\nComputer Science exchange · Oulu · 2019–2020\nBEng Software Engineering · JUFE · 2017–2021'],
  skills: ['TOOLS & CURIOSITY', 'Build. Make music. See the world.', 'Python · JavaScript · Java · C++ · SQL\nUnity / VR · Arduino · Git\nFigma · Axure · Photoshop · Lightroom\nPhotography · guitar · travel · fitness']
 };
 function CVMilestone({z, kind}) {
  const {zh,t}=useLanguage();
- const chinese={intro:['舒心','人机交互研究 · 音乐 · 创意技术','纽卡斯尔大学博士生 · 2023 至今\n计算机学院 · OpenLab\n人工智能 · 多模态交互 · 学习'],awards:['研究与产品经历','探索、设计与实践','浙江大学访问博士生 · 2026 至今\n纽约大学阿布扎比分校访问博士生 · 2025\n产品经历 · Shopee / 快手 / 滴滴 / 网易'],journey:['学习之旅','中国 → 芬兰 → 瑞典 → 英国','爱丁堡大学 · 设计信息学硕士\n达拉纳大学 · 信息系统学士\n奥卢大学 · 计算机科学交换\n江西财经大学 · 软件工程学士'],skills:['工具与好奇心','创造、音乐与看世界','Python · JavaScript · Java · C++ · SQL\nUnity / VR · Arduino · Git\nFigma · Axure · Photoshop · Lightroom\n摄影 · 吉他 · 旅行 · 健身']};
+ const chinese={intro:['舒心','人机交互研究 · 音乐 · 创意技术','纽卡斯尔大学博士生 · 2023 至今\n计算机学院 · OpenLab\n人工智能 · 多模态交互 · 学习'],awards:['研究与产品经历','探索、设计与实践','浙江大学访问博士生 · 2026年6–10月\n纽约大学阿布扎比分校访问博士生 · 2025\n产品经历 · Shopee / 快手 / 滴滴 / 网易'],journey:['学习之旅','中国 → 芬兰 → 瑞典 → 英国','爱丁堡大学 · 设计信息学硕士\n达拉纳大学 · 信息系统学士\n奥卢大学 · 计算机科学交换\n江西财经大学 · 软件工程学士'],skills:['工具与好奇心','创造、音乐与看世界','Python · JavaScript · Java · C++ · SQL\nUnity / VR · Arduino · Git\nFigma · Axure · Photoshop · Lightroom\n摄影 · 吉他 · 旅行 · 健身']};
  const content=zh?chinese[kind]:sections[kind];
  return <group position={[0,2,z]}>
    <Text position={[0,2.3,0]} font={zh?"/fonts/ArialUnicode.ttf":"/fonts/CabinSketch-Bold.ttf"} fontSize={0.62} maxWidth={10} textAlign="center" color="#242424">{content[0]}</Text>
